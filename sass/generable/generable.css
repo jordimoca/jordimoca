@@ -121,6 +121,13 @@ a {
   cursor: pointer;
 }
 
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f9e1d5;
+}
+
 .visible-xs {
   display: block !important;
 }
@@ -140,4 +147,62 @@ a {
     display: block !important;
   }
 }
+
+.my-name {
+  max-width: 500px;
+  min-width: 300px;
+  display: block;
+  margin: auto;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.my-name * {
+  font-family: PlayfairDisplay-Regular;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.txt {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000;
+}
+
+.txt--moca {
+  text-align: right;
+  font-size: 36px;
+  line-height: 36px;
+  font-family: PlayfairDisplay-Bold;
+}
+
+.txt--small {
+  font-size: 18px;
+  line-height: 18px;
+  text-align: right;
+}
+
+.txt--small .aka {
+  font-size: 18px;
+  font-family: PlayfairDisplay-bold;
+}
+
+.signature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.signature__img img {
+  width: 100px;
+  height: auto;
+  margin-left: 20px;
+}
+
 /*# sourceMappingURL=generable.css.map */
