@@ -1,0 +1,143 @@
+/* Usage example 
+
+	@include keyframes(animate) {
+		50% {
+			transform: rotate(90deg);
+		}
+		100% {
+			transform: rotate(-90deg);
+		}
+	}
+
+*/
+/* Usage example 
+
+	@include font-face("MyFont", "path/to/MyFont", $style: normal, $weight: normal);
+
+*/
+@font-face {
+  font-display: swap;
+  font-family: "PlayfairDisplay-Regular";
+  src: url("../assets/fonts/playfair/PlayfairDisplay-Regular.ttf.eot");
+  src: url("../assets/fonts/playfair/PlayfairDisplay-Regular.ttf.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/playfair/PlayfairDisplay-Regular.ttf.woff") format("woff"), url("../assets/fonts/playfair/PlayfairDisplay-Regular.ttf.ttf") format("truetype"), url("../assets/fonts/playfair/PlayfairDisplay-Regular.ttf.svg#PlayfairDisplay-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "PlayfairDisplay-Bold";
+  src: url("../assets/fonts/playfair/PlayfairDisplay-Bold.ttf.eot");
+  src: url("../assets/fonts/playfair/PlayfairDisplay-Bold.ttf.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/playfair/PlayfairDisplay-Bold.ttf.woff") format("woff"), url("../assets/fonts/playfair/PlayfairDisplay-Bold.ttf.ttf") format("truetype"), url("../assets/fonts/playfair/PlayfairDisplay-Bold.ttf.svg#PlayfairDisplay-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "PlayfairDisplay-Black";
+  src: url("../assets/fonts/playfair/PlayfairDisplay-Black.ttf.eot");
+  src: url("../assets/fonts/playfair/PlayfairDisplay-Black.ttf.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/playfair/PlayfairDisplay-Black.ttf.woff") format("woff"), url("../assets/fonts/playfair/PlayfairDisplay-Black.ttf.ttf") format("truetype"), url("../assets/fonts/playfair/PlayfairDisplay-Black.ttf.svg#PlayfairDisplay-Black") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "WorkSans-Light";
+  src: url("../assets/fonts/playfair/WorkSans-Light.ttf.eot");
+  src: url("../assets/fonts/playfair/WorkSans-Light.ttf.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/playfair/WorkSans-Light.ttf.woff") format("woff"), url("../assets/fonts/playfair/WorkSans-Light.ttf.ttf") format("truetype"), url("../assets/fonts/playfair/WorkSans-Light.ttf.svg#WorkSans-Light") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "WorkSans-Regular";
+  src: url("../assets/fonts/playfair/WorkSans-Regular.ttf.eot");
+  src: url("../assets/fonts/playfair/WorkSans-Regular.ttf.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/playfair/WorkSans-Regular.ttf.woff") format("woff"), url("../assets/fonts/playfair/WorkSans-Regular.ttf.ttf") format("truetype"), url("../assets/fonts/playfair/WorkSans-Regular.ttf.svg#WorkSans-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "WorkSans-Medium";
+  src: url("../assets/fonts/playfair/WorkSans-Medium.ttf.eot");
+  src: url("../assets/fonts/playfair/WorkSans-Medium.ttf.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/playfair/WorkSans-Medium.ttf.woff") format("woff"), url("../assets/fonts/playfair/WorkSans-Medium.ttf.ttf") format("truetype"), url("../assets/fonts/playfair/WorkSans-Medium.ttf.svg#WorkSans-Medium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "WorkSans-SemiBold";
+  src: url("../assets/fonts/playfair/WorkSans-SemiBold.ttf.eot");
+  src: url("../assets/fonts/playfair/WorkSans-SemiBold.ttf.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/playfair/WorkSans-SemiBold.ttf.woff") format("woff"), url("../assets/fonts/playfair/WorkSans-SemiBold.ttf.ttf") format("truetype"), url("../assets/fonts/playfair/WorkSans-SemiBold.ttf.svg#WorkSans-SemiBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "WorkSans-Bold";
+  src: url("../assets/fonts/playfair/WorkSans-Bold.ttf.eot");
+  src: url("../assets/fonts/playfair/WorkSans-Bold.ttf.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/playfair/WorkSans-Bold.ttf.woff") format("woff"), url("../assets/fonts/playfair/WorkSans-Bold.ttf.ttf") format("truetype"), url("../assets/fonts/playfair/WorkSans-Bold.ttf.svg#WorkSans-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "WorkSans-ExtraBold";
+  src: url("../assets/fonts/playfair/WorkSans-ExtraBold.ttf.eot");
+  src: url("../assets/fonts/playfair/WorkSans-ExtraBold.ttf.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/playfair/WorkSans-ExtraBold.ttf.woff") format("woff"), url("../assets/fonts/playfair/WorkSans-ExtraBold.ttf.ttf") format("truetype"), url("../assets/fonts/playfair/WorkSans-ExtraBold.ttf.svg#WorkSans-ExtraBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "WorkSans-Black";
+  src: url("../assets/fonts/playfair/WorkSans-Black.ttf.eot");
+  src: url("../assets/fonts/playfair/WorkSans-Black.ttf.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/playfair/WorkSans-Black.ttf.woff") format("woff"), url("../assets/fonts/playfair/WorkSans-Black.ttf.ttf") format("truetype"), url("../assets/fonts/playfair/WorkSans-Black.ttf.svg#WorkSans-Black") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+  margin: auto;
+}
+
+a {
+  cursor: pointer;
+}
+
+.visible-xs {
+  display: block !important;
+}
+
+@media (min-width: 1024px) {
+  .visible-xs {
+    display: none !important;
+  }
+}
+
+.visible-md {
+  display: none !important;
+}
+
+@media (min-width: 1024px) {
+  .visible-md {
+    display: block !important;
+  }
+}
+/*# sourceMappingURL=generable.css.map */

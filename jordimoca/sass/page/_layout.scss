@@ -1,0 +1,32 @@
+//General and body styles
+*{
+	font-family: Helvetica, sans-serif;
+	margin:0;
+	box-sizing: border-box;
+}
+
+img{
+	vertical-align: middle;
+	margin: auto;
+}
+
+a{
+	cursor: pointer;
+}
+
+//Visibility for those items depending on resolution
+.visible-xs{
+	display: block !important;
+
+	@include break-md{
+		display: none !important;
+	}
+}
+
+.visible-md{
+	display: none !important;
+
+	@include break-md{
+		display: block !important;
+	}
+}

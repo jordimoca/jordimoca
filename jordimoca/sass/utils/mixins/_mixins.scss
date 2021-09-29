@@ -1,0 +1,300 @@
+//Crossbrowser prefixes
+@mixin prefix($property, $value) {
+	-webkit-#{$property}: #{$value};
+	-khtml-#{$property}: #{$value};
+	-moz-#{$property}: #{$value};
+	-ms-#{$property}: #{$value};
+	-o-#{$property}: #{$value};
+	#{$property}: #{$value};
+}
+
+//Font mixins used
+@mixin font-size($fontSize: 16){
+	font-size: $fontSize + px;
+	font-size: ($fontSize / 16) + rem;
+}
+
+@mixin line-height($lineHeight: 18){
+	line-height: $lineHeight + px;
+	line-height: ($lineHeight / 16) + rem;
+}
+
+@mixin font-height($fontSize: "", $lineHeight: "") {
+    @include font-size($fontSize);
+    @include line-height($lineHeight);
+}
+
+
+//Mixins for flex
+@mixin flex{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+@mixin flex-direction($direction) {
+	@if $direction == row-reverse {
+		-webkit-box-direction: reverse;
+		-webkit-box-orient: horizontal;
+		-moz-box-direction: reverse;
+		-moz-box-orient: horizontal;
+	} @else if $direction == column {
+		-webkit-box-direction: normal;
+		-webkit-box-orient: vertical;
+		-moz-box-direction: normal;
+		-moz-box-orient: vertical;
+	} @else if $direction == column-reverse {
+		-webkit-box-direction: reverse;
+		-webkit-box-orient: vertical;
+		-moz-box-direction: reverse;
+		-moz-box-orient: vertical;
+	} @else {
+		-webkit-box-direction: normal;
+		-webkit-box-orient: horizontal;
+		-moz-box-direction: normal;
+		-moz-box-orient: horizontal;
+	}
+	-webkit-flex-direction: $direction;
+	-ms-flex-direction: $direction;
+	flex-direction: $direction;
+}
+
+@mixin justify-content($justify) {
+	@if $justify == flex-start {
+		-webkit-box-pack: start;
+		-moz-box-pack: start;
+		-ms-flex-pack: start;
+	} @else if $justify == flex-end {
+		-webkit-box-pack: end;
+		-moz-box-pack: end;
+		-ms-flex-pack: end;
+	} @else if $justify == space-between {
+		-webkit-box-pack: justify;
+		-moz-box-pack: justify;
+		-ms-flex-pack: justify;
+	} @else if $justify == space-around {
+		-ms-flex-pack: distribute;
+	} @else {
+		-webkit-box-pack: $justify;
+		-moz-box-pack: $justify;
+		-ms-flex-pack: $justify;
+	}
+	-webkit-justify-content: $justify;
+	justify-content: $justify;
+}
+
+@mixin align-items($align: stretch) {
+	@if $align == flex-start {
+		-webkit-box-align: start;
+		-moz-box-align: start;
+		-ms-flex-align: start;
+	} @else if $align == flex-end {
+		-webkit-box-align: end;
+		-moz-box-align: end;
+		-ms-flex-align: end;
+	} @else {
+		-webkit-box-align: $align;
+		-moz-box-align: $align;
+		-ms-flex-align: $align;
+	}
+	-webkit-align-items: $align;
+	align-items: $align;
+}
+
+//Mixins for breakpoints
+@mixin break-sm {
+	@media (min-width: 768px){ @content; }
+}
+
+@mixin break-md {
+	@media (min-width: 1024px) { @content; }
+}
+
+//Mixins for transitions
+@mixin transition($transition) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+
+//Transforms
+@mixin transform($transforms) {
+	-webkit-transform: $transforms;
+	-moz-transform: $transforms;
+	-ms-transform: $transforms;
+	transform: $transforms;
+}
+
+// Scale
+@mixin scale($scale) {
+    @include transform(scale($scale));
+}
+
+// Translate
+@mixin translate ($x, $y) {
+    @include transform(translate($x, $y));
+}
+
+// Rotate
+@mixin rotate ($deg) { 
+	@include transform(rotate(#{$deg}deg));
+}
+
+//Border radius
+@mixin border-radius($size){
+    -webkit-border-radius: $size + px;
+	-moz-border-radius: $size + px;
+	border-radius: $size + px;  
+}
+
+// Transform Origin
+@mixin transform-origin ($origin) {
+	-webkit-transform-origin: $origin;
+	-moz-transform-origin: $origin;
+    -ms-transform-origin: $origin;
+    transform-origin: $origin;
+}
+
+//Box dimensions
+@mixin box($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+//Keyframe Animations
+@mixin keyframes($name) {
+	@-webkit-keyframes #{$name} {
+		@content;
+	}
+
+	@-moz-keyframes #{$name} {
+		@content;
+	}
+
+	@keyframes #{$name} {
+		@content;
+	}
+}
+/* Usage example 
+
+	@include keyframes(animate) {
+		50% {
+			transform: rotate(90deg);
+		}
+		100% {
+			transform: rotate(-90deg);
+		}
+	}
+
+*/
+
+//Gradients
+//Orientation = vertical
+@mixin gradient($start-color, $end-color, $orientation) {
+	background: $start-color;
+	@if $orientation == 'vertical' {
+		background: -webkit-linear-gradient(top, $start-color, $end-color);
+		background: linear-gradient(to bottom, $start-color, $end-color);
+	} @else if $orientation == 'horizontal' {
+		background: -webkit-linear-gradient(left, $start-color, $end-color);
+		background: linear-gradient(to right, $start-color, $end-color);
+	} @else {
+		background: -webkit-radial-gradient(center, ellipse cover, $start-color, $end-color);
+		background: radial-gradient(ellipse at center, $start-color, $end-color);
+	}
+}
+
+//Font face
+@mixin font-face($font-name, $file-name, $weight: normal, $style: normal) {
+	@font-face {
+		font-display: swap;
+		font-family: quote($font-name);
+		src: url($file-name + '.eot');
+		src: url($file-name + '.eot?#iefix')  format('embedded-opentype'),
+		url($file-name + '.woff') format('woff'),
+		url($file-name + '.ttf')  format('truetype'),
+		url($file-name + '.svg##{$font-name}')  format('svg');
+		font-weight: $weight;
+		font-style: $style;
+	}
+}
+
+/* Usage example 
+
+	@include font-face("MyFont", "path/to/MyFont", $style: normal, $weight: normal);
+
+*/
+
+//Center Vertically width absolute position
+@mixin center-vertically {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	@include prefix(transform, translate(-50%, -50%), 'webkit' 'ms');
+}
+
+// Scale
+@mixin scale($scale) {
+    @include transform(scale($scale));
+}
+
+
+// Translate
+@mixin translate ($x, $y) {
+    @include transform(translate($x, $y));
+}
+
+
+// Skew
+@mixin skew ($x, $y) {
+    @include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+
+// Transform Origin
+@mixin transform-origin ($origin) {
+	-webkit-transform-origin: $origin;
+	-moz-transform-origin: $origin;
+    -ms-transform-origin: $origin;
+    transform-origin: $origin;
+}
+
+//Gradient background
+@mixin gradient-top-bottom ($color-from, $color-to, $percent-from:0%, $percent-to:100%) {
+    background: $color-from; /*Old browsers*/
+    background: -moz-linear-gradient(top,  $color-from $percent-from, $color-to $percent-to); /*FF3.6+*/
+    background: -webkit-gradient(linear, left top, left bottom, color-stop($percent-from, $color-from), color-stop($percent-to,$color-to)); /*Chrome,Safari4+*/
+    background: -webkit-linear-gradient(top,  $color-from $percent-from,$color-to $percent-to); /*Chrome10+,Safari5.1+*/
+    background: -o-linear-gradient(top,  $color-from $percent-from,$color-to $percent-to); /*Opera 11.10+*/
+    background: -ms-linear-gradient(top,  $color-from $percent-from,$color-to $percent-to); /*IE10+*/
+    background: linear-gradient(to bottom,  $color-from $percent-from,$color-to $percent-to); /*W3C*/
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-from', endColorstr='$color-to',GradientType=0 ); /*IE6-9*/
+}
+
+
+@mixin gradient-left-right ($color-from, $color-to, $percent-from:0%, $percent-to:100%) {
+    background: $color-from;
+    background: -moz-linear-gradient(left,  $color-from $percent-from, $color-to $percent-to);
+    background: -webkit-gradient(linear, left top, right top, color-stop($percent-from,$color-from), color-stop($percent-to,$color-to));
+    background: -webkit-linear-gradient(left,  $color-from $percent-from,$color-to $percent-to);
+    background: -o-linear-gradient(left,  $color-from $percent-from,$color-to $percent-to);
+    background: -ms-linear-gradient(left,  $color-from $percent-from,$color-to $percent-to);
+    background: linear-gradient(to right,  $color-from $percent-from,$color-to $percent-to);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-from', endColorstr='$color-to',GradientType=1 );
+}
+
+//Box Shadow
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+	@if $inset {
+		-webkit-box-shadow:inset $top $left $blur $color;
+		-moz-box-shadow:inset $top $left $blur $color;
+		box-shadow:inset $top $left $blur $color;
+	} @else {
+		-webkit-box-shadow: $top $left $blur $color;
+		-moz-box-shadow: $top $left $blur $color;
+		box-shadow: $top $left $blur $color;
+	}
+}
