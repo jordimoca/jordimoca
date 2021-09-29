@@ -1,0 +1,51 @@
+.my-name{
+    max-width: 500px;
+    min-width: 300px;;
+    display: block;
+    margin: auto;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+
+    *{
+        font-family: PlayfairDisplay-Regular;
+        font-size: 26px;
+        line-height: 30px;
+    }
+}
+
+.txt{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.txt--moca{
+    text-align: right;
+    font-size: 36px;
+    line-height: 36px;
+    font-family: PlayfairDisplay-Bold;
+}
+
+.txt--small{
+    font-size: 18px;
+    line-height: 18px;
+    text-align: right;
+
+    .aka{
+        font-size: 18px;
+        font-family: PlayfairDisplay-bold;
+    }
+}
+
+.signature{
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-end;
+
+    &__img img{
+        width: 100px;
+        height: auto;
+        margin-left: 20px;
+    }
+}
