@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+<!-- Primary SEO -->
+<title>My Product Design Process: From Research to Handoff — Jordi Moca</title>
+<meta name="description" content="How I approach a new design challenge: 5 phases from research to handoff. The tools I use at each stage, and why staying in low-fidelity longer produces better results."/>
+<meta name="author" content="Jordi Moca"/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<link rel="canonical" href="https://jordimoca.com/insights/product-design-process.html"/>
+
+<!-- Open Graph -->
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="https://jordimoca.com/insights/product-design-process.html"/>
+<meta property="og:title" content="My Product Design Process: From Research to Handoff — Jordi Moca"/>
+<meta property="og:description" content="How I approach a new design challenge: 5 phases from research to handoff. The tools I use at each stage, and why staying in low-fidelity longer produces better results."/>
+<meta property="og:image" content="https://jordimoca.com/images/og-image.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:locale" content="en_GB"/>
+<meta property="og:site_name" content="Jordi Moca — Product Designer"/>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="My Product Design Process: From Research to Handoff — Jordi Moca"/>
+<meta name="twitter:description" content="How I approach a new design challenge: 5 phases from research to handoff. The tools I use at each stage, and why staying in low-fidelity longer produces better results."/>
+<meta name="twitter:image" content="https://jordimoca.com/images/og-image.jpg"/>
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="../favicon.svg"/>
+
+<!-- Preload fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600;700&display=swap"/></noscript>
+
+<!-- Stylesheet -->
+<link rel="stylesheet" href="../css/styles.css"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "My Product Design Process: From Research to Handoff",
+  "description": "How I approach a new design challenge from first principles. Five phases, the tools I use at each stage, and why staying in low-fidelity longer produces better outcomes.",
+  "author": {"@type": "Person","name": "Jordi Moca","url": "https://jordimoca.com"},
+  "publisher": {"@type": "Person","name": "Jordi Moca","url": "https://jordimoca.com"},
+  "url": "https://jordimoca.com/insights/product-design-process.html",
+  "datePublished": "2025-01-15",
+  "dateModified": "2025-03-07",
+  "keywords": ["product design process","UX research","design handoff","Figma","wireframing","design methodology","product designer"],
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem","position": 1,"name": "Home","item": "https://jordimoca.com/"},
+      {"@type": "ListItem","position": 2,"name": "Insights","item": "https://jordimoca.com/insights/"},
+      {"@type": "ListItem","position": 3,"name": "My Product Design Process","item": "https://jordimoca.com/insights/product-design-process.html"}
+    ]
+  }
+}
+</script>
+
+<!-- Anti-FOUC -->
+<script>(function(){var t=localStorage.getItem('jm-theme');var s=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t||s);})();</script>
+</head>
+<body>
+
+<!-- Chrome -->
+<div class="grain-overlay" aria-hidden="true"></div>
+<div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+<div class="cur-dot" id="cur-dot" aria-hidden="true"></div>
+<div class="cur-ring" id="cur-ring" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header role="banner">
+  <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a class="nav-logo" href="../" aria-label="Jordi Moca — go to homepage">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 875 1017" fill="none" aria-hidden="true" focusable="false" ><path d="M176.06 0C176.39 0.99 176.72 1.98 177.06 3C175.83 4.99609 175.83 4.99609 173.873 7.4375C160.4 25.2601 149.793 45.8858 140.058 65.9561C139.049 68.0229 138.018 70.0777 136.986 72.1328C116.589 113.303 96.0603 166.563 96.0603 213C96.4659 212.09 96.4659 212.09 96.8797 211.162C110.105 181.61 125.106 153.314 144.06 127C144.618 126.226 145.175 125.453 145.749 124.656C152.582 115.208 159.504 105.885 167.06 97C167.511 96.466 167.961 95.932 168.426 95.3818C175.438 87.0725 182.57 78.8846 190.06 71C190.713 70.3083 191.365 69.6165 192.037 68.9038C201.878 58.5367 211.685 49.247 224.06 42C224.696 41.627 225.332 41.254 225.987 40.8696C254.108 24.7974 287.99 21.6789 319.06 30C320.161 30.2887 321.262 30.5775 322.396 30.875C334.069 34.38 344.846 40.4606 355.06 47C383.127 64.9435 415.647 73.5294 448.74 66.4248C459.203 63.8631 469.25 60.2506 479.299 56.4089C486.441 53.7342 493.503 52.1259 501.06 51C501.925 50.8698 502.79 50.7396 503.681 50.6055C506.146 50.302 508.58 50.1223 511.06 50C512.119 49.9471 513.177 49.8943 514.267 49.8398C540.4 49.1887 562.737 56.9081 585.31 69.3359C594.376 74.3001 603.045 78.2337 613.06 81C614.117 81.2952 615.174 81.5904 616.263 81.8945C623.736 83.7266 631.091 84.3812 638.748 84.9375C674.138 87.5573 699.977 102.159 727.452 123.739C729.136 125.059 730.826 126.37 732.517 127.68C738.926 132.659 745.216 137.748 751.383 143.024C754.665 145.831 757.995 148.558 761.373 151.25C766.839 155.694 771.948 160.483 777.052 165.333C780.63 168.734 784.248 172.076 787.931 175.363C816.236 200.757 837.809 228.732 841.06 268C841.135 270.088 841.192 272.177 841.236 274.266C841.26 275.404 841.284 276.542 841.308 277.715C841.351 280.056 841.382 282.397 841.402 284.738C841.715 297.662 845.384 306.906 852.873 317.312C874.108 348.061 878.554 381.607 872.06 417.927C871.74 419.79 871.422 421.654 871.105 423.517C870.275 428.38 869.424 433.24 868.569 438.099C867.747 442.788 866.947 447.48 866.145 452.173C864.323 462.809 862.47 473.44 860.612 484.071C859.68 489.41 858.75 494.75 857.82 500.089C856.257 509.056 854.693 518.023 853.128 526.989C851.545 536.054 849.964 545.12 848.384 554.186C848.19 555.3 847.995 556.414 847.795 557.562C847.016 562.034 846.236 566.507 845.457 570.98C843.377 582.915 841.295 594.849 839.209 606.783C838.488 610.906 837.767 615.03 837.046 619.153C836.785 620.645 836.785 620.645 836.519 622.167C834.386 634.369 832.268 646.574 830.172 658.783C829.356 663.533 828.534 668.282 827.713 673.031C827.1 676.593 826.495 680.157 825.891 683.721C825.535 685.781 825.178 687.84 824.821 689.9C824.669 690.814 824.517 691.728 824.36 692.67C823.288 698.772 823.288 698.772 821.06 701C815.473 699.329 809.886 697.656 804.3 695.983C802.401 695.414 800.502 694.846 798.603 694.278C795.867 693.46 793.132 692.64 790.396 691.82C789.552 691.568 788.708 691.316 787.839 691.056C783.555 689.771 779.295 688.443 775.06 687C775.644 675.11 776.821 663.331 778.159 651.505C778.735 646.398 779.292 641.289 779.849 636.18C780.011 634.696 780.011 634.696 780.176 633.182C784.609 592.407 786.433 551.857 760.127 517.52C756.585 513.201 752.891 509.062 749.06 505C748.448 504.323 747.836 503.646 747.205 502.949C732.306 487.098 712.248 478.841 692.06 472C690.882 471.599 689.704 471.198 688.49 470.785C634.468 452.495 578.939 440.069 522.248 433.688C520.948 433.54 519.649 433.393 518.31 433.241C513.897 432.776 509.482 432.372 505.06 432C503.547 431.871 503.547 431.871 502.003 431.739C481.07 430.008 460.226 429.635 439.231 429.682C436.644 429.688 434.058 429.69 431.471 429.693C407.326 429.729 383.308 429.998 359.292 432.747C356.933 433.014 354.572 433.268 352.211 433.52C293.553 439.836 236.318 452.897 180.435 471.75C179.666 472.006 178.897 472.262 178.104 472.526C144.73 483.703 117.512 502.839 101.189 534.59C88.3085 560.529 87.1427 586.678 89.6853 615.062C89.8669 617.194 90.0483 619.326 90.2293 621.458C91.6425 637.745 93.4457 653.981 95.4846 670.201C95.5898 671.039 95.6949 671.877 95.8032 672.74C95.9994 674.292 96.1982 675.843 96.4002 677.394C96.8146 680.642 97.0603 683.717 97.0603 687C79.4318 692.468 61.7672 697.792 44.0603 703C40.1628 684.504 36.9975 665.877 33.7615 647.257C33.2782 644.476 32.7942 641.696 32.31 638.916C30.6092 629.148 28.9113 619.379 27.2158 609.61C25.655 600.617 24.0871 591.626 22.5159 582.635C21.152 574.828 19.7936 567.019 18.4391 559.211C17.6369 554.586 16.8326 549.962 16.0226 545.34C12.8026 526.952 9.73718 508.563 7.23781 490.062C7.1372 489.321 7.0366 488.58 6.93294 487.816C3.0627 459.09 1.08272 430.262 0.557636 401.289C0.497915 398.005 0.432845 394.721 0.366963 391.438C0.246768 385.292 0.14516 379.146 0.060322 373C0.0489823 372.196 0.0376426 371.392 0.0259592 370.563C-0.191234 352.942 0.9625 335.539 3.18532 318.062C3.29225 317.212 3.39919 316.362 3.50936 315.486C14.3577 230.134 46.0089 148.14 99.0603 80C99.9043 78.8999 100.748 77.7996 101.592 76.6992C108.421 67.8448 115.629 59.3535 123.06 51C123.525 50.4765 123.989 49.953 124.467 49.4136C131.318 41.7279 138.544 34.4174 145.81 27.125C147.142 25.7867 147.142 25.7867 148.5 24.4214C153.525 19.4083 158.636 14.5792 164.06 10C164.636 9.51306 165.212 9.02611 165.805 8.52441C167.385 7.1973 168.971 5.87812 170.56 4.5625C171.097 4.11713 171.633 3.67176 172.185 3.21289C173.476 2.14099 174.768 1.07035 176.06 0Z" fill="currentColor"/><path d="M218.36 736.815C221.227 736.813 224.094 736.794 226.961 736.775C243.904 736.723 261.122 737.322 277.685 741.188C279.1 741.508 279.1 741.508 280.544 741.835C293.615 744.923 306.001 749.626 318.31 754.938C389.863 785.71 471.977 785.103 544.246 757.123C548.489 755.43 552.682 753.629 556.873 751.812C585.181 739.543 614.621 736.569 645.185 736.688C646.172 736.689 647.16 736.691 648.177 736.693C695.617 736.839 741.901 743.889 787.435 757.188C788.158 757.398 788.881 757.608 789.626 757.824C797.343 760.082 804.803 762.5 812.06 766C811.463 774.138 810.306 782.094 808.899 790.128C808.572 792.025 808.572 792.025 808.238 793.961C807.645 797.4 807.046 800.838 806.446 804.276C805.943 807.163 805.442 810.05 804.941 812.937C803.758 819.76 802.569 826.581 801.378 833.402C800.156 840.399 798.943 847.397 797.733 854.395C796.688 860.439 795.638 866.482 794.584 872.524C793.957 876.117 793.332 879.71 792.712 883.304C786.027 922.041 774.751 958.087 741.373 982.125C728.72 990.934 715.449 998.439 701.06 1004C700.385 1004.26 699.709 1004.53 699.013 1004.8C659.859 1019.68 610.644 1021.59 571.701 1004.78C553.969 996.334 539.203 984.454 525.06 971C524.305 970.309 523.55 969.618 522.771 968.906C511.636 958.378 502.599 945.278 495.06 932C494.43 930.913 493.8 929.827 493.15 928.707C481.982 908.963 474.917 887.33 468.043 865.815C467.7 864.763 467.358 863.71 467.006 862.625C466.546 861.198 466.546 861.198 466.076 859.742C461.886 848.434 453.745 839.509 443.06 834C437.982 831.823 433.323 831 427.931 832.652C415.553 837.668 406.627 846.87 401.296 858.927C399.258 863.995 397.762 869.194 396.248 874.438C385.735 909.498 370.19 941.15 345.06 968C344.189 968.937 343.317 969.874 342.42 970.84C314.573 1000.1 279.148 1014.88 239.06 1016C238.317 1016.02 237.573 1016.04 236.807 1016.07C209.009 1016.76 182.436 1011.53 157.06 1000C156.346 999.678 155.631 999.355 154.894 999.023C124.294 985.018 97.5934 961.656 85.3606 929.716C80.0448 914.965 77.3526 899.876 74.7933 884.456C74.1824 880.798 73.5528 877.143 72.9246 873.488C72.1299 868.858 71.3369 864.228 70.5518 859.597C68.5529 847.81 66.4883 836.036 64.3963 824.266C64.0922 822.552 63.7883 820.839 63.4844 819.126C62.3014 812.458 61.1182 805.79 59.9306 799.123C59.2384 795.235 58.5505 791.346 57.8658 787.457C57.6129 786.026 57.3586 784.594 57.1026 783.163C56.7522 781.203 56.4076 779.242 56.0632 777.281C55.8685 776.183 55.6737 775.085 55.4731 773.953C55.0955 771.252 54.9793 768.722 55.0603 766C94.5345 749.49 139.495 741.002 182.06 738C183.237 737.914 184.413 737.828 185.625 737.739C196.536 736.99 207.425 736.814 218.36 736.815ZM689.06 779C687.706 781.986 687.706 781.986 689.177 784.793C689.758 785.913 690.338 787.033 690.935 788.188C691.249 788.799 691.563 789.41 691.886 790.041C694.359 794.808 697.017 799.465 699.685 804.125C714.122 829.458 716.715 856.991 709.06 885C707.951 888.571 706.734 892.099 705.49 895.625C705.143 896.614 704.797 897.603 704.44 898.621C700.456 909.873 696.084 920.968 691.685 932.062C690.474 935.127 689.265 938.192 688.057 941.257C687.315 943.138 686.572 945.018 685.826 946.897C682.008 956.146 682.008 956.146 681.06 966C688.301 968.131 695.466 964.389 701.882 961.053C727.86 946.403 742.69 922.633 750.658 894.496C756.76 871.829 761.17 847.949 761.31 824.438C761.331 823.569 761.352 822.701 761.373 821.807C761.432 811.819 758.867 802.515 752.06 795C737.4 783.12 712.101 778.68 693.56 778.938C692.704 778.947 691.848 778.956 690.967 778.965C690.337 778.976 689.708 778.988 689.06 779Z" fill="currentColor"/></svg>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="../work/">Work</a></li>
+        <li><a href="">Insights</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode" aria-pressed="false"></button>
+        <a href="mailto:jordimoca@gmail.com" class="nav-cta">Get in touch</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mob-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="mob-menu" id="mob-menu" role="dialog" aria-label="Site navigation" aria-modal="true">
+  <a href="../work/">Work</a>
+  <a href="">Insights</a>
+  <a href="../about.html">About</a>
+  <a href="../#contact">Contact</a>
+  <a href="mailto:jordimoca@gmail.com">Email me</a>
+</div>
+
+<main id="main">
+
+<header class="article-hero" aria-labelledby="proc-h1">
+  <div class="article-hero__grid" aria-hidden="true"></div>
+  <div class="article-hero__inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb" style="margin-bottom:28px">
+      <a href="../">Home</a><span class="breadcrumb__sep" aria-hidden="true">/</span>
+      <a href="./">Insights</a><span class="breadcrumb__sep" aria-hidden="true">/</span>
+      <span aria-current="page">Design Process</span>
+    </nav>
+    <div class="article-hero__meta">
+      <span class="article-hero__cat">Design Process</span>
+      <span class="article-hero__sep" aria-hidden="true"></span>
+      <time class="article-hero__time" datetime="2025-01-15">January 2025</time>
+      <span class="article-hero__sep" aria-hidden="true"></span>
+      <span class="article-hero__time">10 min read</span>
+    </div>
+    <h1 id="proc-h1" class="article-hero__title">My Product Design<br>Process: <em>From Research<br>to Handoff</em></h1>
+    <p class="article-hero__intro">How I approach a new design challenge from first principles &mdash; five phases, the tools I use at each stage, and why staying in low-fidelity longer consistently produces better outcomes.</p>
+  </div>
+</header>
+
+<div class="article-body">
+  <div class="article-body__inner">
+
+    <aside class="article-sidebar" aria-label="Table of contents">
+      <nav class="article-toc" aria-label="Article sections">
+        <p class="article-toc__label">Contents</p>
+        <a class="article-toc__link" href="#why-process">Why process matters</a>
+        <a class="article-toc__link" href="#phase-1">Phase 1: Research</a>
+        <a class="article-toc__link" href="#phase-2">Phase 2: Problem definition</a>
+        <a class="article-toc__link" href="#phase-3">Phase 3: Exploration</a>
+        <a class="article-toc__link" href="#phase-4">Phase 4: Design & iteration</a>
+        <a class="article-toc__link" href="#phase-5">Phase 5: Handoff</a>
+        <a class="article-toc__link" href="#tools">Tools I use</a>
+      </nav>
+    </aside>
+
+    <article class="article-prose" aria-label="Article content">
+
+      <h2 id="why-process">Why process matters more than tools</h2>
+
+      <p>Every few years the design community has a new debate about which tool is the right one. Sketch vs Figma. Figma vs something new. I&rsquo;ve been working in this field long enough to have used most of them, and my honest view is that tools are largely interchangeable once you&rsquo;ve internalised a good process.</p>
+
+      <p>The designers I&rsquo;ve learned the most from had disciplined processes and were flexible about tools. The designers who struggled most were often the reverse: expert with specific software but without a structured way to navigate from problem to solution. Process is the frame. Tools are the materials.</p>
+
+      <p>What I&rsquo;m describing here is my process for the kind of complex, information-dense products I work on most &mdash; healthcare software, fintech tools, professional SaaS products. It&rsquo;s a process shaped by working in contexts where <strong>getting it wrong has real costs</strong>, which makes the rigour necessary, not optional.</p>
+
+      <div class="article-callout">
+        <p>&ldquo;The most common process mistake I see is jumping to solutions before the problem is properly defined. It feels productive. It isn&rsquo;t.&rdquo;</p>
+      </div>
+
+      <h2 id="phase-1">Phase 1: Research &amp; Discovery</h2>
+
+      <p>Every project starts with the same question: <em>what do we actually know, and what are we assuming?</em> I&rsquo;ve found that most projects come with a significant quantity of assumptions dressed as facts, and one of the most valuable things a designer can do early is distinguish between them.</p>
+
+      <h3>What I do in this phase</h3>
+
+      <p>The research phase has two components: understanding the existing system and understanding the users who work with it.</p>
+
+      <p>For the <strong>existing system</strong>, I run a structured UX audit: documenting the current interface against heuristic criteria, mapping the user flows as they actually exist (not as the product team thinks they exist), and identifying where the gaps are between intended use and actual use. These are often significantly different.</p>
+
+      <p>For the <strong>users</strong>, I try to observe before I interview. Watching someone use the system in their actual environment tells you things that a Zoom call never can. The context, the interruptions, the workarounds they&rsquo;ve built around the system&rsquo;s limitations &mdash; these are gold.</p>
+
+      <p>I follow observation with structured interviews, focusing on tasks and workflows rather than opinions about the interface. &ldquo;Walk me through the last time you [task]&rdquo; produces better data than &ldquo;What do you think of this screen?&rdquo;</p>
+
+      <p>You can see this approach in the research I did for the <a href="../work/streaming-product-design.html">Streaming Platform Redesign</a> &mdash; the audit of three platforms before interviewing users produced specific, testable hypotheses rather than vague impressions.</p>
+
+      <h2 id="phase-2">Phase 2: Problem Definition</h2>
+
+      <p>This is the phase most often skipped under time pressure, and the skipping almost always makes the project take longer. A well-defined problem is already most of the solution. A vague problem produces vague solutions that have to be iterated until they accidentally become good.</p>
+
+      <p>I use a simple structure for problem definition:</p>
+
+      <ol>
+        <li><strong>The user and their context</strong> &mdash; Who specifically is affected by this problem? In what context does the problem occur? What else is happening at that moment?</li>
+        <li><strong>The current state</strong> &mdash; What happens now? What is the user forced to do? What cognitive or physical effort does it require?</li>
+        <li><strong>The cost</strong> &mdash; What is the measurable or estimable cost of the current state? Time lost, errors made, users who abandon, workarounds required.</li>
+        <li><strong>The success criteria</strong> &mdash; What does good look like? How will we know the problem is solved? This has to be specific enough to be testable.</li>
+      </ol>
+
+      <p>For the <a href="../work/fintech-product-design.html">Checkout Redesign</a>, the problem definition was: <em>47% of users who reach the checkout abandon before purchasing, primarily because of forced account creation and an unexpected delivery cost reveal. A successful redesign eliminates both barriers and reduces required interactions from 14+ to 8 or fewer.</em> That definition drove every subsequent decision.</p>
+
+      <h2 id="phase-3">Phase 3: Ideation &amp; Exploration</h2>
+
+      <p>This is the phase where most designers want to spend their time, and where the discipline of the earlier phases pays off. If the problem is well-defined, the solution space is constrained in a useful way. Ideation becomes focused, not free-for-all.</p>
+
+      <p>I deliberately stay in low-fidelity during exploration. Pen and paper, or the roughest possible wireframes in Figma. The reason is simple: <strong>polish creates attachment</strong>. The more finished something looks, the harder it is to abandon it when you discover it&rsquo;s wrong. Rough sketches are disposable. High-fidelity mockups are commitments.</p>
+
+      <p>During exploration, I generate multiple distinct structural approaches &mdash; not variations on the same idea. A narrow solution space at this stage usually means the problem wasn&rsquo;t well-defined, or there&rsquo;s an assumption constraining the design that should be challenged.</p>
+
+      <h3>Testing in low fidelity</h3>
+
+      <p>Before investing in high-fidelity, I test the structural approaches with users. Not to validate aesthetic decisions &mdash; there are none yet &mdash; but to validate information architecture, task flow and hierarchy. These are the things that are expensive to change after the visual design is in place.</p>
+
+      <p>The questions I&rsquo;m asking at this stage: Can users find what they need? Does the flow match their mental model? Are there steps they expect that aren&rsquo;t there? Are there steps we&rsquo;ve included that they find unnecessary?</p>
+
+      <h2 id="phase-4">Phase 4: Design &amp; Iteration</h2>
+
+      <p>Once a structural approach has been tested and validated, I move to high-fidelity design. The transition is deliberate &mdash; I don&rsquo;t drift gradually from rough to polished, I make an explicit decision that the structure is right and then invest in the visual design.</p>
+
+      <p>Working in Figma, I build components first, then screens. Components before screens is not just an organisation preference &mdash; it forces consistency and reveals design system implications early. If you&rsquo;re designing screens and improvising components as you go, you&rsquo;ll have inconsistencies that are expensive to fix later.</p>
+
+      <p>Iteration at this stage is driven by two inputs: internal design review (does this meet the success criteria? does it hold up across edge cases?) and user testing with higher-fidelity prototypes. The higher fidelity allows testing of things that low-fi can&rsquo;t: interaction timing, visual hierarchy, error states, empty states.</p>
+
+      <h2 id="phase-5">Phase 5: Handoff &amp; Collaboration</h2>
+
+      <p>Handoff is not the end of the design process. It&rsquo;s a stage in an ongoing collaboration. I&rsquo;ve seen too many good designs fall apart at implementation because the designer considered their work done when they shared the Figma file.</p>
+
+      <p>Good handoff means:</p>
+
+      <ul>
+        <li><strong>Specs that answer the questions engineers will actually ask.</strong> Spacing values, interaction states, responsive behaviour, edge cases. If it&rsquo;s not in the file, it will be improvised.</li>
+        <li><strong>Component documentation.</strong> What does this component do? What are its variants? What are the rules for when to use each one? This is especially important for design systems work where components will be used without a designer present.</li>
+        <li><strong>Active involvement during implementation.</strong> I review builds in the browser, not in Figma. What looks right in a design tool may not feel right in the actual product. Catching these gaps during build is much cheaper than fixing them after launch.</li>
+        <li><strong>Post-launch review.</strong> Did the implementation match the design intent? What did we learn from real use that we didn&rsquo;t anticipate? What should inform the next iteration?</li>
+      </ul>
+
+      <div class="article-callout">
+        <p>&ldquo;The best design handoffs I&rsquo;ve been part of felt less like a transfer of files and more like a transfer of understanding. The goal is for the engineer to know why things are designed the way they are, not just what they look like.&rdquo;</p>
+      </div>
+
+      <h2 id="tools">Tools I use at each phase</h2>
+
+      <p>For completeness, here&rsquo;s what I reach for at each stage. These are the tools that work for me &mdash; the same process can be run with different tools.</p>
+
+      <div class="article-principle">
+        <div class="article-principle__num" aria-hidden="true">1</div>
+        <div class="article-principle__content"><strong>Research</strong><p>Lookback or Maze for session recording and user interviews. Miro or FigJam for synthesis and affinity mapping. Google Sheets for quantitative data.</p></div>
+      </div>
+      <div class="article-principle">
+        <div class="article-principle__num" aria-hidden="true">2</div>
+        <div class="article-principle__content"><strong>Problem definition &amp; exploration</strong><p>Paper sketches, or Figma with a very loose grid. No colour, no detail &mdash; just shapes and flow. Google Docs for written problem framing.</p></div>
+      </div>
+      <div class="article-principle">
+        <div class="article-principle__num" aria-hidden="true">3</div>
+        <div class="article-principle__content"><strong>High-fidelity design</strong><p>Figma, exclusively. Auto Layout for responsive components, Variables for design tokens and theme switching, Prototyping for interaction flows.</p></div>
+      </div>
+      <div class="article-principle">
+        <div class="article-principle__num" aria-hidden="true">4</div>
+        <div class="article-principle__content"><strong>Handoff &amp; implementation review</strong><p>Figma Dev Mode for spec delivery. Browser DevTools for implementation review. Loom for async feedback on builds.</p></div>
+      </div>
+
+      <hr class="article-sep"/>
+
+      <p>If you&rsquo;re working through a similar design challenge and want a second perspective, or if you&rsquo;re looking for a designer who works this way, <a href="mailto:jordimoca@gmail.com">get in touch</a>. I&rsquo;m always interested in hard problems.</p>
+
+    </article>
+  </div>
+</div>
+
+<section class="related-section" aria-labelledby="proc-related">
+  <div class="related-section__inner">
+    <p class="related-section__label" id="proc-related">See this process in action</p>
+    <div class="related-grid">
+      <a class="related-card" href="../work/streaming-product-design.html" aria-label="Read: Streaming Platform Redesign"><span class="related-card__type">Case Study 01</span><span class="related-card__title">Streaming Platform Redesign</span><span class="related-card__cta">View case study <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      <a class="related-card" href="../work/fintech-product-design.html" aria-label="Read: Frictionless Checkout"><span class="related-card__type">Case Study 02</span><span class="related-card__title">Frictionless Checkout Experience</span><span class="related-card__cta">View case study <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      <a class="related-card" href="designing-healthcare-interfaces.html" aria-label="Read: Healthcare Interfaces"><span class="related-card__type">Insights &middot; Healthcare UX</span><span class="related-card__title">Designing Complex Healthcare Interfaces</span><span class="related-card__cta">Read article <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+<a class="next-cs" href="designing-healthcare-interfaces.html" aria-label="Next article: Designing Healthcare Interfaces">
+  <div><div class="next-cs__label">Also read</div><div class="next-cs__title">Designing Complex Healthcare Interfaces &rarr;</div></div>
+  <div class="next-cs__arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M2 9h14M9 2l7 7-7 7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+</a>
+
+</main>
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <p class="footer-copy">&copy; 2025 Jordi Moca &mdash; Product Designer &middot; Barcelona, Catalonia</p>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="../">Home</a>
+      <a href="../work/">Work</a>
+      <a href="">Insights</a>
+      <a href="../about.html">About</a>
+      <a href="mailto:jordimoca@gmail.com">Contact</a>
+      <a href="https://www.linkedin.com/in/jordimoca/" target="_blank" rel="noopener noreferrer">LinkedIn &#8599;</a>
+    </nav>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>
