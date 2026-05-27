@@ -208,7 +208,7 @@ body.cur-view  .cur-ring { width:68px; height:68px; border-color:var(--acc); bac
   font-weight: 900;
   font-style: italic;
   letter-spacing: -0.025em;
-  line-height: 0.8;
+  line-height: 0.9;
   color: var(--fg);
   margin-bottom: var(--s3);
 }
@@ -400,6 +400,10 @@ body.cur-view  .cur-ring { width:68px; height:68px; border-color:var(--acc); bac
 .cs-process-item p { font-size:.88rem; color:var(--fg3); line-height:1.65; max-width:52ch; }
 .cs-pullquote { border-left:2px solid var(--acc); padding:var(--s4) var(--s6); margin:var(--s6) 0; background:var(--acc-dim); border-radius:0 var(--r) var(--r) 0; }
 .cs-pullquote p { font-size:clamp(1.05rem,1.6vw,1.25rem); font-weight:500; color:var(--fg); line-height:1.55; font-style:italic; max-width:none; }
+.cs-concept-note { display:flex; align-items:flex-start; gap:var(--s2); margin-top:var(--s4); padding:var(--s3) var(--s4); border:1px solid var(--bds); border-radius:var(--r); background:var(--bg2); }
+.cs-concept-note svg { flex-shrink:0; margin-top:2px; color:var(--acc); }
+.cs-concept-note p { font-size:.84rem; line-height:1.6; color:var(--fg2); max-width:64ch; margin:0; }
+.cs-concept-note strong { color:var(--fg); font-weight:600; }
 
 /* ── 19 ARTICLES ──────────────────────────────────────────────────────── */
 .article-container { max-width:var(--max-w); margin:0 auto; padding:var(--s12) var(--gutter) var(--s20); display:grid; grid-template-columns:1fr min(68ch,100%) 1fr; gap:var(--s8); }
