@@ -107,13 +107,11 @@ images/
   README.md
 
 work/
-  streaming-product-design.html
-  fintech-product-design.html
+  index.html
 
 insights/
   index.html
   designing-healthcare-interfaces.html
-  product-design-process.html
 
 robots.txt
 sitemap.xml
