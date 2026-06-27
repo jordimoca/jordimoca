@@ -38,22 +38,22 @@ function accentRGB() {
 
 
 /* ==========================================================================
-   01 · HERO MESH
-   A grid of dots gently drifts; dots near the pointer pull toward it,
-   brighten to the accent colour and link up with short lines.
+   01 · SITE MESH
+   Full-page fixed background: a grid of dots gently drifts; dots near the
+   pointer pull toward it, brighten to the accent colour and link up with
+   short lines. Present behind every page (z-index:-1).
    ========================================================================== */
 
-const HeroMesh = (() => {
-  let host, cvs, ctx, raf = null, visible = true;
+const SiteMesh = (() => {
+  let cvs, ctx, raf = null;
   let W = 0, H = 0, dots = [], t = 0;
   const GAP = 34, RADIUS = 165, LINK = 48;
   const m = { x: -9999, y: -9999, active: false };
   let ACC = [205, 255, 0];
 
   function build() {
-    const r = host.getBoundingClientRect();
-    W = cvs.width = Math.max(1, Math.round(r.width));
-    H = cvs.height = Math.max(1, Math.round(r.height));
+    W = cvs.width = Math.max(1, window.innerWidth);
+    H = cvs.height = Math.max(1, window.innerHeight);
     dots = [];
     for (let y = GAP / 2; y < H; y += GAP)
       for (let x = GAP / 2; x < W; x += GAP) dots.push({ x, y, ox: x, oy: y });
@@ -97,25 +97,20 @@ const HeroMesh = (() => {
 
   function init() {
     if (REDUCED) return;
-    cvs = document.getElementById('hero-canvas');
-    host = document.querySelector('.hero');
-    if (!cvs || !host) return;
+    cvs = document.getElementById('site-canvas');
+    if (!cvs) return;
     ctx = cvs.getContext('2d');
     ACC = accentRGB();
     build();
-    new ResizeObserver(build).observe(host);
+    let rt; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(build, 200); });
 
-    host.addEventListener('pointermove', e => {
-      const r = host.getBoundingClientRect();
-      m.x = e.clientX - r.left; m.y = e.clientY - r.top; m.active = true;
-    });
-    host.addEventListener('pointerleave', () => { m.active = false; m.x = m.y = -9999; });
+    window.addEventListener('pointermove', e => {
+      m.x = e.clientX; m.y = e.clientY; m.active = true;
+    }, { passive: true });
+    document.addEventListener('pointerleave', () => { m.active = false; m.x = m.y = -9999; });
 
-    /* Pause the loop while the hero is scrolled out of view */
-    new IntersectionObserver(entries => {
-      visible = entries[0].isIntersecting;
-      if (visible) start(); else stop();
-    }, { threshold: 0 }).observe(host);
+    /* Pause the loop while the tab is hidden */
+    document.addEventListener('visibilitychange', () => { document.hidden ? stop() : start(); });
 
     start();
   }
@@ -125,7 +120,7 @@ const HeroMesh = (() => {
 
 
 /* ==========================================================================
-   02 · HERO GLOW
+   02 · HERO GLOW — lime glow that follows the pointer inside the hero only
    ========================================================================== */
 
 const HeroGlow = (() => {
@@ -379,5 +374,5 @@ document.addEventListener('DOMContentLoaded', () => {
   HeroEntrance.init();
   HeroGlow.init();
   Scramble.init();
-  HeroMesh.init();
+  SiteMesh.init();
 });
