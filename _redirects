@@ -5,3 +5,14 @@
 /work/streaming-product-design.html  /work/  301
 /work/fintech-product-design.html    /work/  301
 /work/healthcare-interface-system.html  /work/  301
+
+# About → About Me (renamed route)
+/about.html   /about-me.html   301
+/about        /about-me.html   301
+/about-me     /about-me.html   301
+
+# Insights → Blog (renamed section)
+/insights/index.html   /blog/   301
+/insights/     /blog/   301
+/insights      /blog/   301
+/insights/designing-healthcare-interfaces.html   /blog/designing-healthcare-interfaces.html   301
