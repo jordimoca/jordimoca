@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="theme-color" content="#0B0B0B"/>
+<title>Designing Complex Healthcare Interfaces — Jordi Moca</title>
+<meta name="description" content="Why medical software has uniquely hard UX constraints and the five principles that help navigate them. Lessons from prescription workflow design."/>
+<meta name="author" content="Jordi Moca"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://jordimoca.com/blog/designing-healthcare-interfaces.html"/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="https://jordimoca.com/blog/designing-healthcare-interfaces.html"/>
+<meta property="og:title" content="Designing Complex Healthcare Interfaces — Jordi Moca"/>
+<meta property="og:description" content="Why medical software has uniquely hard UX constraints and the five principles that help navigate them. Lessons from prescription workflow design."/>
+<meta property="og:image" content="https://jordimoca.com/images/og-image.jpg"/>
+<meta property="og:locale" content="en_GB"/>
+<meta property="og:site_name" content="Jordi Moca"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Designing Complex Healthcare Interfaces — Jordi Moca"/>
+<meta name="twitter:description" content="Why medical software has uniquely hard UX constraints and the five principles that help navigate them. Lessons from prescription workflow design."/>
+<meta name="twitter:image" content="https://jordimoca.com/images/og-image.jpg"/>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"/>
+<link rel="stylesheet" href="../css/styles.css"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Designing Complex Healthcare Interfaces","description":"Why medical software has uniquely hard UX constraints and the five principles that help navigate them.","url":"https://jordimoca.com/blog/designing-healthcare-interfaces.html","author":{"@type":"Person","name":"Jordi Moca"},"publisher":{"@type":"Person","name":"Jordi Moca"},"datePublished":"2024-09-12","keywords":["Healthcare UX","Medical Software","UX Design","Complex Interfaces"]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="scroll-bar" id="scroll-bar" aria-hidden="true"></div>
+<div class="article-progress" id="article-progress" aria-hidden="true"></div>
+<div class="cur-dot" id="cur-dot" aria-hidden="true"></div>
+<div class="cur-ring" id="cur-ring" aria-hidden="true"></div><header role="banner"><nav class="nav" id="site-nav" aria-label="Primary navigation"><div class="nav-inner"><a class="nav-logo" href="../index.html"><img src="../assets/logo-lime.svg" alt="" width="30" height="35" aria-hidden="true"/>jordi moc.a</a><ul class="nav-links" role="list">
+<li><a href="../work/index.html">Work</a></li>
+<li><a href="../about-me.html">About Me</a></li>
+<li><a href="../blog/index.html" aria-current="page">Blog</a></li>
+<li><a href="../index.html#contact">Contact</a></li>
+</ul><div class="nav-right"><a href="mailto:jordimoca@gmail.com" class="nav-cta" data-magnetic>Get in touch</a><button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mob-menu"><span></span><span></span><span></span></button></div></div></nav></header><div class="mob-menu" id="mob-menu" role="dialog" aria-label="Site navigation" aria-modal="true">
+<nav aria-label="Mobile navigation">
+<a href="../work/index.html">Work</a>
+<a href="../about-me.html">About Me</a>
+<a href="../blog/index.html">Blog</a>
+<a href="../index.html#contact">Contact</a>
+<a href="mailto:jordimoca@gmail.com">Email me</a>
+</nav>
+</div>
+<main id="main">
+<div class="container" style="padding-top:calc(var(--nav-h) + var(--s15));padding-bottom:var(--s12);border-bottom:1px solid var(--bd)">
+<a class="page-back reveal" href="../blog/index.html">&#8592; All writing</a>
+<div style="display:flex;align-items:center;gap:var(--s2);margin-bottom:var(--s4)" class="reveal reveal-d1">
+<span class="insight-cat" style="margin:0">Healthcare UX</span>
+<span class="insight-time" style="margin:0">&middot;&nbsp; 8 min read</span>
+</div>
+<h1 class="page-title reveal reveal-d1">Designing Complex<br>Healthcare Interfaces</h1>
+<p class="page-subtitle reveal reveal-d2">Why medical software has uniquely hard UX constraints &mdash; and the five principles that help navigate them.</p>
+</div>
+<div class="article-container">
+<article class="article-body" aria-label="Article content">
+
+<h2 class="article-h2">The problem with applying consumer UX to clinical software</h2>
+<p class="article-p">Most product design canon was written for consumer products. Clean, minimal, delightful. Reduce steps, remove friction, make it joyful. This is excellent advice for a social app or an e-commerce checkout. It is actively dangerous applied naively to medical software.</p>
+<p class="article-p">Healthcare interfaces are used by domain experts &mdash; clinicians, pharmacists, nurses &mdash; who bring years of domain knowledge to every session. They are not casual users being guided through an unfamiliar product. They are professionals doing high-stakes work in a high-interruption environment, where a poorly placed UI element can contribute to a patient safety incident.</p>
+<div class="article-highlight"><p>The goal is not to make clinical software feel simple. The goal is to make complex clinical work feel manageable. These are not the same thing.</p></div>
+
+<h2 class="article-h2">Five constraints that are unique to medical software</h2>
+<p class="article-p"><strong>1. The cost of an error is not inconvenience.</strong> In consumer products, an error means a frustrated user. In clinical software, an error can mean a wrong medication, a missed allergy, a dose calculation mistake. Error prevention is not a UX best practice &mdash; it is a patient safety requirement. This changes everything about how you design forms, confirmations and status indicators.</p>
+<p class="article-p"><strong>2. Your users are power users by definition.</strong> Consumer UX often optimises for the first-time user. In healthcare, the user doing the work has typically been using some version of this software for years. They have keyboard shortcuts memorised, workflow patterns established, and a very high tolerance for density &mdash; provided that density is well-organised and consistent. Don&#8217;t oversimplify for a beginner user who doesn&#8217;t exist in your context.</p>
+<p class="article-p"><strong>3. Interruption is the normal state.</strong> A nurse completing a medication order is interrupted constantly on a typical ward. Your system must be designed around interrupted, resumed workflows. That means persistent draft states, clear &#8220;in progress&#8221; indicators, and interfaces that tell the user exactly where they were and what they were doing when they return.</p>
+<p class="article-p"><strong>4. Colour is regulated.</strong> In clinical environments, status colours have established clinical meaning. Red means critical. Yellow means warning. Green means normal. These are not available for your brand palette. Additionally, interfaces must pass accessibility standards for colour-blind users and work on calibrated medical displays &mdash; not just Retina screens.</p>
+<p class="article-p"><strong>5. The environment is adversarial.</strong> The software runs on 7-year-old hospital hardware. The screens are in corridor lighting, direct sunlight, and dimmed procedure rooms. The keyboard is shared between users and cleaned with disinfectant. The mouse is often absent &mdash; keyboard-primary navigation is not an accessibility consideration, it&#8217;s the default operating mode.</p>
+
+<div class="article-visual">
+<div class="article-visual-item"><p class="article-visual-label">Working state</p><p class="article-visual-value">Interrupted</p><p class="article-visual-desc">Clinical workflows are constantly interrupted and resumed mid-task</p></div>
+<div class="article-visual-item"><p class="article-visual-label">Error consequence</p><p class="article-visual-value">Patient risk</p><p class="article-visual-desc">Why error prevention is not optional in clinical interface design</p></div>
+</div>
+
+<h2 class="article-h2">Five principles I apply to clinical UX</h2>
+<p class="article-p"><strong>Principle 1: Error prevention through constraint.</strong> The most reliable way to prevent an input error is to make the wrong input structurally unavailable. A dosage field that accepts free text will eventually receive &#8220;500g&#8221; when &#8220;500mg&#8221; was intended. A compound input with a constrained unit selector makes that error impossible. Before you add a validation message, ask whether you can make the invalid state unreachable.</p>
+<p class="article-p"><strong>Principle 2: Surface safety-critical context inline.</strong> When a clinician prescribes a drug, they need to know: current medications (potential interactions), allergy status, weight (for dose calculation), and renal/hepatic function (dose adjustment). This information lives in different modules of most hospital systems. If the user has to navigate away to retrieve it, they&#8217;ll hold it in working memory instead &mdash; introducing recall errors. Bring it to the prescription form. Co-locate the information with the decision it informs.</p>
+<p class="article-p"><strong>Principle 3: Make interruption recovery effortless.</strong> Auto-save on field blur. Persistent &#8220;in progress&#8221; queue visible at a glance. Return to exact cursor position. Time-stamped last edit. The user returning to an interrupted session should be able to resume in under three seconds with zero re-orientation cost.</p>
+<p class="article-p"><strong>Principle 4: Keyboard fluency is a first-class design concern.</strong> Document shortcuts inline, discoverable on demand (tooltip on hover/focus, not a separate help page). Design tab order to follow clinical logic, not visual layout. Ensure every action is reachable without a mouse. Test with keyboard-only navigation as your primary usability criterion, not as an accessibility audit afterthought.</p>
+<p class="article-p"><strong>Principle 5: Legibility over aesthetics.</strong> Minimum 15px body text. Generous line height (1.6+). Status that uses icon + label + colour, never colour alone. High contrast mode available as a persistent user preference. The clinical environment will test your typography in conditions your design tool cannot simulate: fluorescent lighting, night-mode screens, readers glasses, tired eyes at the end of a 12-hour shift. Design for that user, not for a Behance screenshot.</p>
+
+<div class="article-highlight"><p>The most important question in healthcare UX is not &#8220;how do we make this simpler?&#8221; It&#8217;s &#8220;how do we make this safe and fast for someone who does it 200 times a day?&#8221;</p></div>
+
+<h2 class="article-h2">What this means for how you work</h2>
+<p class="article-p">Clinical UX can&#8217;t be designed from a desk on consumer instincts. The context matters more here than in almost any other domain &mdash; the lighting, the hardware, the interruptions, the way an expert actually moves through a task. The closer the design stays to that real context, and to the people who live in it, the better the decisions get.</p>
+<p class="article-p">Domain knowledge is the constraint that matters most. You&#8217;re designing for experts whose work you don&#8217;t do, so the job is to learn their mental model deeply enough to know which assumptions are wrong &mdash; and to stay close to the clinical and product people who can catch the ones you can&#8217;t see yourself.</p>
+<p class="article-p">And you need to accept that some consumer UX patterns are wrong here. Hidden progressive disclosure, animations that delay information, screens that require horizontal scrolling &mdash; these are not just suboptimal in clinical contexts. They are actively problematic. The instinct to make everything minimal and beautiful can obscure information that needs to be immediately visible.</p>
+<p class="article-p">Healthcare interface design is hard. It is also among the most meaningful design work available &mdash; the kind where getting it right has consequences that matter far beyond a conversion rate.</p>
+
+</article>
+</div>
+</main><footer class="site-footer" role="contentinfo"><div class="footer-inner"><p class="footer-copy">&copy; 2025 Jordi Moca &mdash; Product Designer &middot; Barcelona</p><nav class="footer-links" aria-label="Footer navigation">
+<a href="../index.html">Home</a>
+<a href="../work/index.html">Work</a>
+<a href="../about-me.html">About Me</a>
+<a href="../blog/index.html">Blog</a>
+<a href="https://www.linkedin.com/in/jordimoca/" target="_blank" rel="noopener noreferrer">LinkedIn &#8599;</a>
+</nav></div></footer><script src="../js/script.js"></script></body></html>
