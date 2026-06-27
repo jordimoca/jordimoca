@@ -44,9 +44,9 @@
 
 /* ── 02 RESET ─────────────────────────────────────────────────────────── */
 *,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
-html { scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
+html { scroll-behavior:smooth; -webkit-text-size-adjust:100%; background:var(--bg); }
 body {
-  background:var(--bg); color:var(--fg); font-family:var(--font-ui);
+  background:transparent; color:var(--fg); font-family:var(--font-ui);
   font-size:clamp(15px,1.05vw,17px); line-height:1.6; overflow-x:hidden;
   cursor:none; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
   letter-spacing:-.005em;
@@ -179,13 +179,15 @@ body.cur-view  .cur-ring { width:66px; height:66px; border-color:var(--acc); bac
 
 /* ── 08 HERO ──────────────────────────────────────────────────────────── */
 .hero { position:relative; overflow:hidden; padding:calc(var(--nav-h) + 28px) var(--gutter) 50px; min-height:min(88vh,720px); display:flex; flex-direction:column; justify-content:center; }
-#hero-canvas { position:absolute; inset:0; width:100%; height:100%; display:block; z-index:0; pointer-events:none; }
 .hero-glow {
   position:absolute; left:0; top:0; width:520px; height:520px; margin:-260px 0 0 -260px;
   border-radius:50%; background:radial-gradient(circle, var(--acc-glow), rgba(205,255,0,0) 62%);
   pointer-events:none; opacity:0; transition:opacity .35s; mix-blend-mode:screen; z-index:1;
 }
 .hero-body { position:relative; z-index:2; max-width:var(--max-w); width:100%; margin:0 auto; will-change:transform; }
+
+/* Site-wide interactive mesh — fixed behind all content, every page */
+#site-canvas { position:fixed; inset:0; width:100%; height:100%; display:block; z-index:-1; pointer-events:none; }
 .hero-top { display:flex; justify-content:space-between; align-items:flex-start; gap:var(--s3); }
 .hero-badge {
   display:inline-flex; align-items:center; gap:9px;
@@ -234,7 +236,7 @@ body.cur-view  .cur-ring { width:66px; height:66px; border-color:var(--acc); bac
 .stat:hover { background:var(--bg2); }
 
 /* ── 11 ABOUT (home) ──────────────────────────────────────────────────── */
-.section-about { display:grid; grid-template-columns:200px 1fr; gap:var(--s6); padding:66px var(--gutter) var(--s6); border-top:1px solid var(--bd); }
+.section-about { max-width:var(--max-w); margin-inline:auto; display:grid; grid-template-columns:200px 1fr; gap:var(--s6); padding:66px var(--gutter) var(--s6); border-top:1px solid var(--bd); }
 .section-about > .eyebrow { margin-bottom:0; }
 .about-lead { font-size:clamp(1.7rem,4vw,2.6rem); line-height:1.1; letter-spacing:-.02em; font-weight:500; margin:0; color:var(--fg); }
 .about-lead .accent { color:var(--acc); }
@@ -242,7 +244,7 @@ body.cur-view  .cur-ring { width:66px; height:66px; border-color:var(--acc); bac
 .about-body + .about-body { margin-top:18px; }
 
 /* ── 12 EXPERIENCE ────────────────────────────────────────────────────── */
-.section-exp { padding:18px var(--gutter) 0; }
+.section-exp { max-width:var(--max-w); margin-inline:auto; padding:18px var(--gutter) 0; }
 .exp-row { display:grid; grid-template-columns:230px 1fr; gap:28px; padding:24px 0; border-bottom:1px solid var(--bd); }
 .exp-period { font-family:var(--font-mono); font-size:.78rem; text-transform:uppercase; letter-spacing:.03em; color:var(--fg3); }
 .exp-role { font-size:1.4rem; letter-spacing:-.02em; font-weight:600; margin:0; color:var(--fg); }
@@ -252,7 +254,7 @@ body.cur-view  .cur-ring { width:66px; height:66px; border-color:var(--acc); bac
 .exp-row:hover .exp-role .scramble { color:var(--acc); }
 
 /* ── 13 SKILL GROUPS ──────────────────────────────────────────────────── */
-.skills-cols { display:grid; grid-template-columns:repeat(4,1fr); gap:28px; padding:48px var(--gutter); }
+.skills-cols { max-width:var(--max-w); margin-inline:auto; display:grid; grid-template-columns:repeat(4,1fr); gap:28px; padding:48px var(--gutter); }
 .skill-group-label { font-family:var(--font-mono); font-size:.70rem; text-transform:uppercase; letter-spacing:.06em; color:var(--acc); margin-bottom:14px; }
 .skill-chips { display:flex; flex-wrap:wrap; gap:8px; }
 
@@ -265,8 +267,8 @@ body.cur-view  .cur-ring { width:66px; height:66px; border-color:var(--acc); bac
 .philo-t { font-size:1.3rem; font-weight:600; letter-spacing:-.02em; color:var(--fg); }
 
 /* ── 15 WRITING / INSIGHTS ────────────────────────────────────────────── */
-.section-writing { padding:56px var(--gutter) 0; }
-.writing-list { /* rows below the section header */ }
+.section-writing { max-width:var(--max-w); margin-inline:auto; padding:56px var(--gutter) 0; }
+.writing-list { max-width:var(--max-w); margin-inline:auto; }
 .insight-row2 {
   display:grid; grid-template-columns:230px 1fr 40px; gap:28px; align-items:center;
   padding:26px var(--gutter); border-bottom:1px solid var(--bd);
@@ -491,7 +493,7 @@ body.cur-view  .cur-ring { width:66px; height:66px; border-color:var(--acc); bac
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important;}
   .reveal{opacity:1;transform:none;transition:none;}
   .hero-anim{opacity:1!important;}
-  #hero-canvas{display:none;}
+  #site-canvas{display:none;}
 }
 
 /* ── 26 RESPONSIVE ────────────────────────────────────────────────────── */
