@@ -11,8 +11,12 @@
 /about        /about-me.html   301
 /about-me     /about-me.html   301
 
-# Insights → Blog (renamed section)
-/insights/index.html   /blog/   301
-/insights/     /blog/   301
-/insights      /blog/   301
-/insights/designing-healthcare-interfaces.html   /blog/designing-healthcare-interfaces.html   301
+# Blog removed (2026-10): old blog and insights URLs go home
+/blog/index.html   /   301
+/blog/   /   301
+/blog   /   301
+/blog/designing-healthcare-interfaces.html   /   301
+/insights/index.html   /   301
+/insights/   /   301
+/insights   /   301
+/insights/designing-healthcare-interfaces.html   /   301
