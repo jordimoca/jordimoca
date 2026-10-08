@@ -1,3 +1,7 @@
+# Netlify-style rules. GitHub Pages ignores this file: there, about.html and about-me.html
+# are redirect pages and 404.html sends the other old URLs to their new place.
+
+# Old case studies → case studies index
 /work/streaming-platform/       /work/  301
 /work/fintech-case-study/       /work/  301
 /work/streaming-platform.html   /work/  301
@@ -6,10 +10,10 @@
 /work/fintech-product-design.html    /work/  301
 /work/healthcare-interface-system.html  /work/  301
 
-# About → About Me (renamed route)
-/about.html   /about-me.html   301
-/about        /about-me.html   301
-/about-me     /about-me.html   301
+# About moved to /about/
+/about.html     /about/   301
+/about-me.html  /about/   301
+/about-me       /about/   301
 
 # Blog removed (2026-10): old blog and insights URLs go home
 /blog/index.html   /   301
