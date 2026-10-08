@@ -1,213 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Jordi Moca — Senior Product Designer | Complex Interface Design, Barcelona</title>
-<meta name="description" content="Jordi Moca is a Senior Product Designer based in Barcelona with ten years on complex platforms across healthcare, digital banking and high-traffic media."/>
-<meta name="author" content="Jordi Moca"/>
-<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
-<link rel="canonical" href="https://jordimoca.com/"/>
-<meta property="og:type" content="website"/>
-<meta property="og:url" content="https://jordimoca.com/"/>
-<meta property="og:title" content="Jordi Moca — Senior Product Designer"/>
-<meta property="og:description" content="Product Designer with ten years on complex platforms across healthcare, digital banking and high-traffic media. Based in Barcelona."/>
-<meta property="og:image" content="https://jordimoca.com/images/og-image.jpg"/>
-<meta property="og:image:width" content="1200"/>
-<meta property="og:image:height" content="630"/>
-<meta property="og:locale" content="en_GB"/>
-<meta property="og:site_name" content="Jordi Moca"/>
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Jordi Moca — Senior Product Designer"/>
-<meta name="twitter:description" content="Product Designer with ten years on complex platforms. Barcelona."/>
-<meta name="theme-color" content="#0B0B0B"/>
-<link rel="icon" type="image/svg+xml" href="favicon.svg"/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"/>
-<link rel="stylesheet" href="css/styles.css"/>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Jordi Moca","jobTitle":"Senior Product Designer","description":"Senior Product Designer with ten years on complex platforms across healthcare, digital banking and high-traffic media.","url":"https://jordimoca.com","email":"jordimoca@gmail.com","sameAs":["https://www.linkedin.com/in/jordimoca/"],"address":{"@type":"PostalAddress","addressLocality":"Barcelona","addressRegion":"Catalonia","addressCountry":"ES"},"knowsAbout":["UX Design","Product Design","Design Systems","Healthcare UX","Digital Banking","Complex Interfaces","Figma"]}</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jordi Moca · Senior Product Designer</title>
+<meta name="description" content="Jordi Moca, Senior Product Designer in Barcelona. Ten years designing dense interfaces for professional users, in healthcare, digital banking and high-traffic media.">
+<link rel="canonical" href="https://www.jordimoca.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jordi Moca">
+<meta property="og:url" content="https://www.jordimoca.com/">
+<meta property="og:title" content="Jordi Moca · Senior Product Designer">
+<meta property="og:description" content="Jordi Moca, Senior Product Designer in Barcelona. Ten years designing dense interfaces for professional users, in healthcare, digital banking and high-traffic media.">
+<meta property="og:image" content="https://www.jordimoca.com/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Jordi Moca, Senior Product Designer: comic-book cover illustration">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#ff5cbf">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:wght@400;600;700;800&family=Shantell+Sans:ital,wght@0,400;0,600;1,400&display=swap">
+<link rel="stylesheet" href="assets/css/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Jordi Moca", "jobTitle": "Senior Product Designer", "url": "https://www.jordimoca.com/", "email": "mailto:jordimoca@gmail.com", "sameAs": ["https://www.linkedin.com/in/jordimoca/"], "address": {"@type": "PostalAddress", "addressLocality": "Barcelona", "addressCountry": "ES"}}</script>
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to main content</a>
-<div class="scroll-bar" id="scroll-bar" aria-hidden="true"></div>
-<div class="cur-dot" id="cur-dot" aria-hidden="true"></div>
-<div class="cur-ring" id="cur-ring" aria-hidden="true"></div>
-<canvas id="site-canvas" aria-hidden="true"></canvas>
-
-<header role="banner">
-<nav class="nav" id="site-nav" aria-label="Primary navigation">
-<div class="nav-inner">
-<a class="nav-logo" href="index.html#hero-name" aria-label="Jordi Moca — home">
-<img src="assets/logo-lime.svg" alt="" width="30" height="35" aria-hidden="true"/>jordi moc.a
-</a>
-<ul class="nav-links" role="list">
-<li><a href="work/index.html">Work</a></li>
-<li><a href="about-me.html">About Me</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-<div class="nav-right">
-<a href="mailto:jordimoca@gmail.com" class="nav-cta" data-magnetic>Get in touch</a>
-<button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mob-menu"><span></span><span></span><span></span></button>
-</div>
-</div>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav nav--cover" id="top">
+<div class="wrap">
+<a class="logo" href="./" aria-label="jordimoca.com, home"><span class="avatar" aria-hidden="true"><svg width="44" height="43" viewBox="0 0 44 43" focusable="false"><ellipse cx="21.8292" cy="21.2007" rx="21.8292" ry="21.2007" fill="#fff"/><path d="M12.6939 3.76344C12.6939 3.79786 12.7294 3.83227 12.7294 3.86669C12.6939 3.93552 12.6939 3.93552 12.6231 4.00435C12.1271 4.62382 11.7728 5.34653 11.4185 6.03483C11.3831 6.10366 11.3476 6.17249 11.3122 6.24132C10.6036 7.65233 9.85964 9.51074 9.85964 11.0938C9.85964 11.0594 9.85964 11.0594 9.89507 11.025C10.3556 10.027 10.8871 9.02893 11.5602 8.13414C11.5956 8.09973 11.5956 8.06531 11.6311 8.06531C11.8791 7.72116 12.1271 7.41143 12.3751 7.10169C12.4105 7.06728 12.4105 7.06728 12.4105 7.03286C12.6585 6.75754 12.9419 6.48222 13.1899 6.2069C13.2254 6.17249 13.2254 6.17249 13.2608 6.13807C13.6151 5.79392 13.9694 5.44978 14.3945 5.20887C14.4299 5.20887 14.4299 5.17446 14.4654 5.17446C15.4574 4.62382 16.6619 4.52057 17.7602 4.79589C17.7956 4.79589 17.8311 4.83031 17.8665 4.83031C18.2916 4.93355 18.6814 5.14004 19.0356 5.38095C20.0276 6.00041 21.1968 6.31015 22.3659 6.03483C22.7202 5.966 23.0745 5.82834 23.4288 5.69068C23.6768 5.62185 23.9602 5.55302 24.2082 5.51861C24.2436 5.51861 24.2791 5.51861 24.3145 5.51861C24.3854 5.48419 24.4916 5.48419 24.5625 5.48419C24.5979 5.48419 24.6334 5.48419 24.6688 5.48419C25.5899 5.44978 26.4048 5.7251 27.1842 6.13807C27.5031 6.31015 27.8219 6.44781 28.1762 6.55105C28.2116 6.55105 28.2471 6.58547 28.2825 6.58547C28.5659 6.6543 28.8139 6.6543 29.0974 6.68871C30.3374 6.79196 31.2585 7.27377 32.2151 8.0309C32.2859 8.06531 32.3568 8.09973 32.4276 8.16856C32.6402 8.34063 32.8528 8.51271 33.0654 8.68478C33.2071 8.78803 33.3134 8.89127 33.4196 8.9601C33.6322 9.13217 33.8094 9.26983 33.9865 9.44191C34.1282 9.57957 34.2345 9.68281 34.3762 9.78606C35.3682 10.6808 36.1476 11.6445 36.2539 12.9866C36.2539 13.0555 36.2539 13.1243 36.2539 13.1931C36.2539 13.2276 36.2539 13.2964 36.2539 13.3308C36.2539 13.3996 36.2539 13.4685 36.2539 13.5717C36.2894 14.0191 36.3956 14.3288 36.6791 14.673C37.4231 15.7398 37.6002 16.91 37.3522 18.1489C37.3522 18.2177 37.3168 18.2866 37.3168 18.3554C37.2814 18.493 37.2459 18.6651 37.2459 18.8372C37.2105 19.0093 37.1751 19.1469 37.1396 19.319C37.0688 19.6976 36.9979 20.0417 36.9625 20.4203C36.9271 20.5924 36.8916 20.7988 36.8562 20.9709C36.7854 21.2807 36.7499 21.5904 36.6791 21.9001C36.6436 22.2099 36.5728 22.5196 36.5019 22.8293C36.5019 22.8637 36.5019 22.8982 36.5019 22.967C36.4665 23.1046 36.4311 23.2767 36.3956 23.4144C36.3248 23.8274 36.2539 24.2403 36.1831 24.6533C36.1476 24.791 36.1476 24.9286 36.1122 25.0663C36.1122 25.1351 36.1122 25.1351 36.1122 25.1695C36.0059 25.5825 35.9351 26.0299 35.8642 26.4429C35.8288 26.615 35.8288 26.7526 35.7934 26.9247C35.7579 27.0624 35.7225 27.1656 35.7225 27.3033C35.7225 27.3721 35.6871 27.4409 35.6871 27.5098C35.6871 27.5442 35.6871 27.5786 35.6516 27.613C35.6162 27.8195 35.6162 27.8195 35.5454 27.8883C35.3328 27.8195 35.1556 27.7851 34.9431 27.7162C34.8722 27.6818 34.8368 27.6818 34.7659 27.6474C34.6596 27.613 34.5534 27.613 34.4471 27.5786C34.4471 27.5786 34.4116 27.5442 34.3762 27.5442C34.2345 27.5098 34.0574 27.4409 33.9156 27.4065C33.9511 26.9935 33.9865 26.5806 34.0219 26.202C34.0574 25.9955 34.0574 25.8234 34.0928 25.6514C34.0928 25.6169 34.0928 25.6169 34.0928 25.5481C34.2699 24.1371 34.3054 22.7605 33.3842 21.5904C33.2779 21.4183 33.1362 21.2807 32.9945 21.143C32.9591 21.1086 32.9591 21.1086 32.9236 21.0742C32.3922 20.5235 31.6836 20.2482 30.9751 20.0073C30.9396 20.0073 30.9042 19.9729 30.8334 19.9729C28.9202 19.319 26.9716 18.906 24.9522 18.6995C24.9168 18.6995 24.8814 18.6651 24.8105 18.6651C24.6688 18.6651 24.4916 18.6307 24.3499 18.6307C24.3145 18.6307 24.3145 18.6307 24.2436 18.6307C23.4996 18.5619 22.7556 18.5619 22.0116 18.5619C21.9408 18.5619 21.8345 18.5619 21.7282 18.5619C20.8779 18.5619 20.0276 18.5619 19.1774 18.6651C19.1065 18.6651 19.0356 18.6651 18.9294 18.6995C16.8745 18.906 14.8196 19.3534 12.8356 20.0073C12.8356 20.0073 12.8002 20.0073 12.7648 20.0417C11.5956 20.4203 10.6391 21.0742 10.0368 22.1754C9.57621 23.0702 9.54078 23.965 9.64707 24.9286C9.64707 24.9975 9.64707 25.0663 9.64707 25.1351C9.71792 25.7202 9.75335 26.2708 9.82421 26.8215C9.85964 26.8559 9.85964 26.8903 9.85964 26.9247C9.85964 26.9591 9.85964 27.0279 9.85964 27.0624C9.89507 27.2 9.89507 27.3033 9.89507 27.4065C9.25735 27.5786 8.65507 27.7851 8.01735 27.9572C7.87564 27.3377 7.76935 26.6838 7.66307 26.0299C7.62764 25.9267 7.62764 25.8578 7.59221 25.7546C7.55678 25.4104 7.48592 25.0663 7.41507 24.7566C7.37964 24.4468 7.30878 24.1371 7.27335 23.8274C7.2025 23.552 7.16707 23.2767 7.09621 23.0014C7.09621 22.8637 7.06078 22.6917 7.02535 22.5196C6.91907 21.9001 6.81278 21.2807 6.7065 20.6268C6.7065 20.5924 6.7065 20.5924 6.7065 20.5579C6.56478 19.5599 6.49392 18.5619 6.49392 17.5638C6.4585 17.4606 6.4585 17.3573 6.4585 17.2197C6.4585 17.0132 6.4585 16.8067 6.4585 16.6002C6.4585 16.5658 6.4585 16.5314 6.4585 16.5314C6.4585 15.9119 6.49392 15.3269 6.56478 14.7074C6.56478 14.673 6.56478 14.6386 6.60021 14.6042C6.9545 11.6789 8.08821 8.85686 9.96592 6.51664C10.0014 6.48222 10.0368 6.44781 10.0722 6.41339C10.2848 6.10366 10.5682 5.79392 10.8162 5.51861C10.8516 5.48419 10.8516 5.48419 10.8516 5.44978C11.0996 5.20887 11.3831 4.93355 11.6311 4.69265C11.6665 4.65823 11.6665 4.65823 11.7019 4.5894C11.9145 4.41733 12.0916 4.27967 12.2688 4.10759C12.3042 4.10759 12.3042 4.07318 12.3396 4.07318C12.3751 4.00435 12.4459 3.96993 12.5168 3.93552C12.5168 3.9011 12.5522 3.9011 12.5522 3.86669C12.5876 3.83227 12.6585 3.79786 12.6939 3.76344Z" fill="#141018"/><path d="M14.1816 29.1273C14.2879 29.1273 14.3942 29.1273 14.5005 29.1273C15.1027 29.1273 15.705 29.1273 16.3073 29.2649C16.3427 29.2993 16.3427 29.2993 16.4136 29.2993C16.8742 29.4026 17.2993 29.5747 17.7245 29.7467C20.2753 30.8136 23.1805 30.7792 25.7313 29.8156C25.873 29.7467 26.0502 29.7123 26.1919 29.6435C27.1839 29.2305 28.2467 29.1273 29.3096 29.1273C29.345 29.1273 29.3805 29.1273 29.4159 29.1273C31.1165 29.1273 32.7462 29.3682 34.3405 29.8156C34.3759 29.8156 34.4113 29.85 34.4467 29.85C34.6947 29.9188 34.9782 29.9876 35.2262 30.1253C35.1907 30.4006 35.1553 30.6759 35.1199 30.9513C35.1199 31.0201 35.1199 31.0201 35.0845 31.0889C35.0845 31.1922 35.049 31.3298 35.0136 31.4331C35.0136 31.5363 34.9782 31.6396 34.9782 31.7428C34.9427 31.9837 34.9073 32.2246 34.8365 32.4311C34.801 32.672 34.7656 32.9129 34.7302 33.1538C34.6947 33.3603 34.6593 33.5668 34.6239 33.8077C34.5885 33.911 34.553 34.0486 34.553 34.1519C34.305 35.494 33.9153 36.733 32.7107 37.5589C32.2856 37.8687 31.7896 38.1096 31.2936 38.3161C31.2582 38.3161 31.2582 38.3505 31.2227 38.3505C29.841 38.8667 28.105 38.9355 26.7233 38.3505C26.0856 38.0407 25.5542 37.6278 25.0582 37.1804C25.0227 37.146 25.0227 37.146 24.9873 37.1115C24.5976 36.733 24.2787 36.2856 23.9953 35.8382C23.9599 35.8038 23.9599 35.7694 23.9245 35.7349C23.5347 35.0466 23.2867 34.2895 23.0387 33.5668C23.0387 33.5324 23.0033 33.498 23.0033 33.4636C23.0033 33.3947 23.0033 33.3947 22.9679 33.3603C22.8262 32.9473 22.5427 32.672 22.153 32.4655C21.9759 32.3967 21.7987 32.3623 21.6216 32.4311C21.1965 32.6032 20.8776 32.9129 20.665 33.3259C20.5942 33.498 20.5587 33.67 20.4879 33.8421C20.1336 35.0466 19.5667 36.1479 18.681 37.0771C18.6456 37.1115 18.6102 37.146 18.5747 37.1804C17.6182 38.1784 16.3427 38.6946 14.9256 38.729C14.8902 38.729 14.8902 38.729 14.8547 38.729C13.8627 38.7635 12.9062 38.5914 12.0205 38.1784C11.985 38.1784 11.985 38.144 11.9496 38.144C10.8513 37.6622 9.93017 36.8706 9.4696 35.7694C9.29245 35.2531 9.18617 34.7369 9.11531 34.1863C9.07988 34.083 9.07988 33.9454 9.04445 33.8077C9.00902 33.67 8.9736 33.498 8.9736 33.3603C8.90274 32.9473 8.79645 32.5344 8.7256 32.1214C8.7256 32.087 8.7256 32.0181 8.69017 31.9493C8.65474 31.7084 8.61931 31.5019 8.58388 31.261C8.54845 31.1233 8.54845 30.9857 8.51302 30.848C8.51302 30.8136 8.4776 30.7792 8.4776 30.7104C8.4776 30.6415 8.44217 30.5727 8.44217 30.5039C8.44217 30.4695 8.44217 30.435 8.40674 30.4006C8.40674 30.2974 8.40674 30.2286 8.40674 30.1253C9.82388 29.5403 11.3827 29.2649 12.9062 29.1617C12.9416 29.1617 12.977 29.1617 13.0479 29.1617C13.4376 29.1273 13.7919 29.1273 14.1816 29.1273ZM30.8685 30.5727C30.833 30.6759 30.833 30.6759 30.8685 30.7792C30.9039 30.8136 30.9039 30.848 30.9393 30.8824C30.9393 30.9169 30.9747 30.9169 30.9747 30.9513C31.0456 31.1233 31.1519 31.261 31.2582 31.4331C31.7542 32.2934 31.8605 33.2571 31.577 34.2207C31.5416 34.3583 31.5062 34.4616 31.4353 34.5993C31.4353 34.6337 31.4353 34.6681 31.3999 34.7025C31.2582 35.0811 31.1165 35.4596 30.9747 35.8382C30.9039 35.9414 30.8685 36.0447 30.833 36.1479C30.7976 36.2168 30.7976 36.2856 30.7622 36.3544C30.6205 36.6641 30.6205 36.6641 30.585 37.0083C30.833 37.0771 31.081 36.9395 31.329 36.8362C32.2502 36.32 32.7816 35.5285 33.065 34.5304C33.2776 33.7733 33.4193 32.9473 33.4193 32.1214C33.4193 32.1214 33.4193 32.087 33.4193 32.0525C33.4193 31.7084 33.3485 31.3987 33.1005 31.1233C32.569 30.7104 31.6833 30.5727 31.0456 30.5727C31.0102 30.5727 30.9747 30.5727 30.9393 30.5727C30.9039 30.5727 30.9039 30.5727 30.8685 30.5727Z" fill="#141018"/></svg></span><span class="logo-t">jordimoca.com</span></a>
+<nav class="nav-links" aria-label="Main">
+<a class="nav-a" href="work/">Work</a>
+<a class="nav-a" href="about/">About me</a>
+<a class="btn btn--tinta btn--sm" href="#contact">Get in touch</a>
 </nav>
+</div>
 </header>
-
-<div class="mob-menu" id="mob-menu" role="dialog" aria-label="Site navigation" aria-modal="true">
-<nav aria-label="Mobile navigation">
-<a href="work/index.html">Work</a>
-<a href="about-me.html">About Me</a>
-<a href="#contact">Contact</a>
-<a href="mailto:jordimoca@gmail.com">Email me</a>
-</nav>
-</div>
-
 <main id="main">
-
-<!-- HERO -->
-<section class="hero" id="hero" aria-labelledby="hero-name">
-<div class="hero-glow" id="hero-glow" aria-hidden="true"></div>
-<div class="hero-body" id="hero-body">
-<div class="hero-top">
-<p class="hero-badge hero-anim d1"><span class="badge-dot" aria-hidden="true"></span>Available for new projects</p>
-<p class="hero-coords hero-anim d1">Barcelona, CAT<br>41.39&deg;N / 2.15&deg;E</p>
+<section class="cover" aria-label="Cover">
+<div class="trama t-rosa" aria-hidden="true"></div>
+<div class="wrap cover-body">
+<div class="cover-top">
+<h1 class="cover-name"><span class="n">Jordi Moca</span> <span class="r stroked" data-t="Senior Product Designer">Senior Product Designer</span></h1>
+<p class="ciudad">Barcelona</p>
 </div>
-<h1 class="hero-name hero-anim d2" id="hero-name" aria-label="jordi moc.a">
-<span class="hero-line"><span class="hero-line-inner" data-scramble data-text="jordi" aria-hidden="true">jordi</span></span>
-<span class="hero-line hero-line--accent"><span class="hero-line-inner" data-scramble data-text="moc.a" aria-hidden="true">moc.a</span></span>
-</h1>
-<div class="hero-foot">
-<p class="hero-role hero-anim d3">Senior Product Designer: Design Systems &amp; complex/regulated products</p>
-<a href="work/index.html" class="hero-cta hero-anim d4" data-magnetic aria-label="View selected work">View work &rarr;</a>
+<div class="scene">
+<div class="globo globo--d"><svg class="d" viewBox="0 0 396 163" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M186.09 1.25C234.661 1.25 278.826 9.42305 311.815 22.7607C328.311 29.4298 341.97 37.3734 351.987 46.1953C362.007 55.0193 368.322 64.6652 370.278 74.7451L370.404 75.3955L371.014 75.6562L392.817 84.9678L368.553 95.3311L368.09 95.5293L367.893 95.9932C360.072 114.428 337.529 130.898 305.271 142.764C273.088 154.602 231.514 161.75 186.09 161.75C134.833 161.75 88.4891 152.649 55.0059 137.984C38.2626 130.651 24.7915 121.952 15.5234 112.355C6.26119 102.765 1.25 92.3397 1.25 81.5C1.25 70.6603 6.26119 60.2352 15.5234 50.6445C24.7915 41.048 38.2626 32.3485 55.0059 25.0156C88.4891 10.3513 134.833 1.25005 186.09 1.25Z" fill="#fff" stroke="#141018" stroke-width="2.5" vector-effect="non-scaling-stroke"/></svg><p>I design products that make hard workflows feel obvious.</p></div>
+<div class="globo globo--m" aria-hidden="true"><svg class="m" viewBox="0 0 330 123" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M165 1.25C210.473 1.25 251.592 7.01709 281.3 16.3105C296.161 20.9595 308.097 26.4696 316.29 32.5293C324.508 38.6071 328.75 45.0717 328.75 51.6162C328.75 56.455 326.439 61.2419 321.897 65.8799C317.351 70.5229 310.642 74.9376 302.057 78.9854C284.892 87.0785 260.475 93.59 231.618 97.5908L230.252 97.7803L230.574 99.1211L235.504 119.63L212.157 100.206L211.76 99.875L211.244 99.9219C196.577 101.263 181.058 101.982 165 101.982C119.527 101.982 78.4084 96.2144 48.7002 86.9209C33.8389 82.2719 21.9033 76.7619 13.71 70.7021C5.49238 64.6244 1.25006 58.1606 1.25 51.6162C1.25 45.0717 5.49231 38.6071 13.71 32.5293C21.9033 26.4696 33.839 20.9595 48.7002 16.3105C78.4084 7.01709 119.527 1.25 165 1.25Z" fill="#fff" stroke="#141018" stroke-width="2.5" vector-effect="non-scaling-stroke"/></svg><p>I design products that make hard workflows feel obvious.</p></div>
+<div class="scene-panel" aria-hidden="true"></div>
+<div class="scene-art"><img src="assets/img/cover-art.webp" alt="Cover illustration: Jordi Moca in a straw hat and sunglasses" width="850" height="1324" decoding="async" fetchpriority="high"></div>
+<p class="credit">Cover art by Laura Guanyabens</p>
 </div>
-</div>
-</section>
-
-<!-- MARQUEE -->
-<div class="marquee" aria-hidden="true" role="presentation">
-<div class="marquee__track">
-<span class="marquee__item">Design Systems</span><span class="marquee__item">Information Architecture</span><span class="marquee__item">Interaction Design</span><span class="marquee__item">Figma</span><span class="marquee__item">HTML · CSS</span><span class="marquee__item">Workflow Optimisation</span><span class="marquee__item">Medical Software</span><span class="marquee__item">Digital Banking</span><span class="marquee__item">Product Thinking</span><span class="marquee__item">Complex Interfaces</span><span class="marquee__item">Design Systems</span><span class="marquee__item">Information Architecture</span><span class="marquee__item">Interaction Design</span><span class="marquee__item">Figma</span><span class="marquee__item">HTML · CSS</span><span class="marquee__item">Workflow Optimisation</span><span class="marquee__item">Medical Software</span><span class="marquee__item">Digital Banking</span><span class="marquee__item">Product Thinking</span><span class="marquee__item">Complex Interfaces</span>
-</div>
-</div>
-
-<!-- STATS -->
-<section class="stats-grid" aria-label="At a glance">
-<div class="stat"><div class="stat-k">Experience</div><div class="stat-v">10 years</div></div>
-<div class="stat"><div class="stat-k">Domains</div><div class="stat-v">Health · Banking · Media</div></div>
-<div class="stat"><div class="stat-k">Location</div><div class="stat-v">Barcelona, CAT</div></div>
-<div class="stat"><div class="stat-k">Tools</div><div class="stat-v">Figma · HTML · React</div></div>
-</section>
-
-<!-- ABOUT -->
-<section class="section-about" id="about" aria-labelledby="about-heading">
-<p class="eyebrow eyebrow--plain reveal">About me</p>
-<div>
-<h2 class="about-lead reveal" id="about-heading">I design products that make hard workflows feel <span class="accent">obvious.</span></h2>
-<p class="about-body reveal reveal-d1">Ten years designing digital products for people who depend on them to do their job — the professional platform doctors, physiotherapists and clinic staff use to run their practice, digital banking for international financial institutions, and high-traffic media. My practice sits at the intersection of systems architecture, interaction design, and deep domain knowledge.</p>
-<p class="about-body reveal reveal-d2">I approach every problem as a systems challenge first. Before any wireframe, I map information flows, identify decision points, and understand the mental model of the person doing the work. Then I design the simplest interface that fits that model.</p>
-<p class="about-body reveal reveal-d2">I work hand-in-hand with Product rather than waiting on finished specs, and I challenge a brief when the evidence calls for it. When the prescription section redesign reached me already defined, I built a proof of concept showing it was unfeasible, defended it with the software architect and took it to the Product Manager. The original approach was dropped and the reframing I proposed shipped instead.</p>
-</div>
-</section>
-
-<!-- EXPERIENCE -->
-<section class="section-exp" aria-labelledby="exp-heading">
-<div class="container" style="padding:0;">
-<div class="sec-index reveal">
-<span id="exp-heading">001 / About me</span>
-<a href="about-me.html">More info &rarr;</a>
-</div>
-</div>
-<div class="exp-row reveal" data-exp-row>
-<div class="exp-period">Mar 2022 — Present</div>
-<div>
-<h3 class="exp-role"><span class="scramble" data-scramble data-text="Senior Product Designer">Senior Product Designer</span> <span class="exp-org">— Cegedim</span></h3>
-<p class="exp-desc">End-to-end design — flows, information architecture, wireframes, high-fidelity UI and prototypes — across four medical products, on dense screens with complex states and edge cases, under regulatory constraints in a Spain–France setup. Weekly contributor to the corporate design system, built under Atomic Design within a team of ten.</p>
-</div>
-</div>
-<div class="exp-row reveal" data-exp-row>
-<div class="exp-period">Feb 2018 — Mar 2022</div>
-<div>
-<h3 class="exp-role"><span class="scramble" data-scramble data-text="UI Developer &amp; UX/UI Designer">UI Developer &amp; UX/UI Designer</span> <span class="exp-org">— Grupo Godó</span></h3>
-<p class="exp-desc">Designed and shipped interfaces for La Vanguardia, Mundo Deportivo and RAC1, working directly in production code with HTML5, CSS3, SASS, JavaScript and BEM. Redesigned dashboards, account areas and onboarding flows, refactored UI and CSS for maintainability, and acted as Scrum Master. Seconded to Yaencontre, the group’s real estate marketplace, in the same role for the months before its launch (Feb – Jun 2018).</p>
-</div>
-</div>
-<div class="exp-row reveal" data-exp-row>
-<div class="exp-period">2016 — 2018</div>
-<div>
-<h3 class="exp-role"><span class="scramble" data-scramble data-text="UX/UI Designer">UX/UI Designer</span> <span class="exp-org">— Innofis / Crealogix</span></h3>
-<p class="exp-desc">Digital banking for international clients — mobile apps, responsive sites and tablet UIs. Built flows and visual UI for onboarding, transfers and PFM features.</p>
-</div>
-</div>
-<div class="exp-row reveal" data-exp-row>
-<div class="exp-period">2015 — 2016</div>
-<div>
-<h3 class="exp-role"><span class="scramble" data-scramble data-text="UX/UI Designer">UX/UI Designer</span> <span class="exp-org">— Respondon</span></h3>
-<p class="exp-desc">Information architecture, web and mobile interfaces, and brand visual guidelines for web and mobile products.</p>
+<div class="cover-intro">
+<p class="cover-kicker">Hard workflows</p>
+<p class="cover-sub">Ten years designing dense interfaces for professional users, in healthcare, digital banking and high-traffic media.</p>
+<a class="btn btn--moca" href="#chapter-1">Start reading</a>
 </div>
 </div>
 </section>
-
-<!-- SKILL GROUPS -->
-<section class="skills-cols" aria-label="Skills">
-<div class="reveal">
-<div class="skill-group-label">Design</div>
-<div class="skill-chips"><span class="tag">Interaction Design</span><span class="tag">Design Systems</span><span class="tag">Information Architecture</span><span class="tag">Prototyping</span></div>
-</div>
-<div class="reveal reveal-d1">
-<div class="skill-group-label">Tools</div>
-<div class="skill-chips"><span class="tag">Figma</span><span class="tag">FigJam</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">SASS</span><span class="tag">React</span><span class="tag">Git</span></div>
-</div>
-<div class="reveal reveal-d2">
-<div class="skill-group-label">Domains</div>
-<div class="skill-chips"><span class="tag">Healthcare</span><span class="tag">Digital Banking</span><span class="tag">Media</span><span class="tag">Regulated Products</span><span class="tag">Complex Interfaces</span></div>
-</div>
-<div class="reveal reveal-d3">
-<div class="skill-group-label">Methods</div>
-<div class="skill-chips"><span class="tag">Problem Framing</span><span class="tag">Proofs of Concept</span><span class="tag">Journey Mapping</span><span class="tag">Heuristic Review</span><span class="tag">Accessibility Audits</span></div>
+<section class="chapter" id="chapter-1" aria-labelledby="chapter-1-title">
+<div class="wrap stack">
+<div class="ch-head"><div class="ch-title"><span class="etiqueta">Chapter 1</span><h2 class="h2" id="chapter-1-title">Rethinking prescription, beyond the brief</h2></div><p class="meta">Cegedim · 2025</p></div>
+<div class="cenefa cenefa--doble" aria-hidden="true"></div>
+<div class="row"><div class="panel" style="--fw:387;--ar:387/300;--AR:358/250"><div class="ph" style="--il:-11.618%;--it:-0.1%;--iw:207.469%;--ih:100%;--IL:-11.75%;--IT:0%;--IW:207.495%;--IH:111%"><img src="assets/img/sketch-03-brief-decided.webp" alt="Sketch: a brief stamped DECIDED: restyle the prescription section with the group&#x27;s new design system and keep the existing structure" width="1574" height="588" decoding="async" loading="lazy"></div><p class="ov cartela" style="--l:0px;--b:0px;--w:89.664%;--L:0px;--B:0px;--W:88.827%">June 2025. A restyle of the prescription section reached me already decided.</p></div><div class="panel" style="--fw:387;--ar:387/300;--AR:358/250"><div class="ph" style="--il:-17.472%;--it:-11.292%;--iw:116.478%;--ih:225.384%;--IL:0%;--IT:-11.6%;--IW:100%;--IH:214.8%"><img src="assets/img/drawing-02-1.webp" alt="Jordi reading a printed brief, hand on his chin" width="940" height="1410" decoding="async" loading="lazy"></div><div class="ov piensa" style="--r:-10px;--t:14px;--w:85.271%;--R:12px;--T:12px;--W:88.827%"><p>Same structure. Same lack of vertical space.</p><i></i><i></i></div></div><div class="panel panel--tex" style="--fw:386;--ar:386/300;--AR:358/250"><svg class="lines lines--d" viewBox="0 0 386 300" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 7.5H386M0 22.5H386M0 37.5H386M0 52.5H386M0 67.5H386M0 82.5H386M0 97.5H386M0 112.5H386M0 127.5H386M0 142.5H386M0 157.5H386M0 172.5H386M0 187.5H386M0 202.5H386M0 217.5H386M0 232.5H386M0 247.5H386M0 262.5H386M0 277.5H386M0 292.5H386" stroke="#141018" stroke-width="1" fill="none" vector-effect="non-scaling-stroke"/></svg><svg class="lines lines--m" viewBox="0 0 358 250" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 6H358M0 18.526H358M0 31.053H358M0 43.579H358M0 56.105H358M0 68.632H358M0 81.158H358M0 93.684H358M0 106.211H358M0 118.737H358M0 131.263H358M0 143.789H358M0 156.316H358M0 168.842H358M0 181.368H358M0 193.895H358M0 206.421H358M0 218.947H358M0 231.474H358M0 244H358" stroke="#141018" stroke-width="1" fill="none" vector-effect="non-scaling-stroke"/></svg><p class="fo cartela" style="--t:auto;--mb:0px;--w:89.637%;--T:auto;--MB:0px;--W:88.827%">I built a proof of concept in Figma. The brief needed a third library to maintain.</p></div></div>
+<div class="row"><div class="panel" style="--fw:590;--ar:590/325.6;--AR:358/304"><div class="ph" style="--il:-0.004%;--it:0%;--iw:100.008%;--ih:101.935%;--IL:-35.773%;--IT:0%;--IW:181.155%;--IH:120%"><img src="assets/img/drawing-03-1.webp" alt="Jordi making his point, with speed lines behind him" width="2180" height="1227" decoding="async" loading="lazy"></div><p class="ov cartela" style="--l:0px;--t:0px;--w:60%;--L:0px;--T:0px;--W:88.827%">First, the architect.</p><div class="ov globo" style="--l:-7px;--b:33.047%;--w:67.797%;--L:12px;--T:14.803%;--W:55.866%;--gp:14px 30px 31px;--bw:100%;--bh:95.181%;--GP:14px 30px 35px;--BW:108%;--BH:84.722%"><svg class="d" viewBox="-7 0 400 79" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M193 1.25C248.182 1.25 298.11 4.95835 334.217 10.9434C352.28 13.9375 366.826 17.4917 376.827 21.4111C381.834 23.3733 385.629 25.3991 388.15 27.4414C390.688 29.4968 391.75 31.4117 391.75 33.1514C391.75 34.4392 391.174 35.8152 389.836 37.2881C388.492 38.7681 386.44 40.2742 383.666 41.7754C378.12 44.7767 369.931 47.6312 359.473 50.2441C338.575 55.4651 308.893 59.6553 273.865 62.2285L272.078 62.3604L272.818 63.9912L278.509 76.5361L249.695 63.833L249.426 63.7148L249.131 63.7285C231.326 64.5909 212.489 65.0537 193 65.0537C137.818 65.0537 87.89 61.3454 51.7832 55.3604C33.7198 52.3662 19.174 48.812 9.17285 44.8926C4.16602 42.9304 0.370869 40.9037 -2.15039 38.8613C-4.68766 36.8059 -5.75 34.8911 -5.75 33.1514C-5.74983 31.4117 -4.68775 29.4968 -2.15039 27.4414C0.370861 25.3991 4.16604 23.3733 9.17285 21.4111C19.174 17.4917 33.7198 13.9375 51.7832 10.9434C87.89 4.95835 137.818 1.25 193 1.25Z" fill="#fff" stroke="#141018" stroke-width="2.5" vector-effect="non-scaling-stroke"/></svg><svg class="m" viewBox="0 0 216 122" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M101.504 1.25C127.886 1.25002 151.851 7.34261 169.73 17.2617C187.636 27.1954 199.268 40.8582 201.401 55.9404L201.486 56.5391L202.007 56.8438L213.528 63.5947L200.664 71.1338L200.245 71.3799L200.103 71.8438C195.859 85.5689 183.654 97.7971 166.184 106.615C148.737 115.421 126.176 120.75 101.504 120.75C73.6626 120.75 48.5173 113.966 30.374 103.062C12.2062 92.1443 1.25 77.2341 1.25 61C1.25 44.7659 12.2062 29.8557 30.374 18.9375C48.5173 8.03422 73.6626 1.25 101.504 1.25Z" fill="#fff" stroke="#141018" stroke-width="2.5" vector-effect="non-scaling-stroke"/></svg><p>It doesn't fix the vertical space, and it needs a third library.</p></div></div><div class="panel" style="--fw:590;--ar:590/325.6;--AR:358/313.6"><div class="ph" style="--il:-21.264%;--it:0%;--iw:187.104%;--ih:128.378%;--IL:-38.268%;--IT:-0.003%;--IW:231.648%;--IH:100.133%"><img src="assets/img/sketch-07-brief-crossed-out.webp" alt="Sketch: a project brief crossed out and torn" width="1574" height="596" decoding="async" loading="lazy"></div><p class="ov ono ono--moca" style="--r:14px;--t:14px;--R:12px;--T:12px"><span class="stroked" data-t="STOP!">STOP!</span></p><p class="ov cartela" style="--l:0px;--b:-0.4px;--w:60%;--L:0px;--B:-0.4px;--W:88.827%">Then the PM. The original plan was dropped.</p></div></div>
+<div class="row"><div class="panel" style="--fw:1200;--ar:1200/380;--AR:358/280"><div class="ph" style="--il:0%;--it:-16.847%;--iw:100%;--ih:119.816%;--IL:-53.074%;--IT:0%;--IW:206.149%;--IH:100%"><img src="assets/img/sketch-08-modular-screen.webp" alt="Sketch: a monitor showing the modular screen, with the ongoing prescription always in view and a fixed central module" width="2388" height="907" decoding="async" loading="lazy"></div><p class="ov cartela" style="--l:0px;--b:0px;--w:45%;--L:0px;--B:0px;--W:88.827%">The reframe: search and the ongoing prescription always in view, one click away.</p></div></div>
+<div class="row"><div class="panel" style="--fw:590;--ar:590/300;--AR:358/196"><div class="ph" style="--ct:0.133%;--ch:73.667%;--il:0%;--it:-0.117%;--iw:100.847%;--ih:100.235%;--CH:68.01%;--IL:-0.006%;--IT:0%;--IW:100.012%;--IH:100%"><img src="assets/img/sketch-11-eight-boxes.webp" alt="Sketch: eight settings boxes feeding one dashboard, from any section or from the subheader" width="1574" height="586" decoding="async" loading="lazy"></div><p class="ov cartela" style="--l:0px;--b:0px;--w:100%;--L:0px;--B:0px;--W:88.827%">Beyond the brief: the settings of eight sections in one dashboard. Nobody asked for it.</p></div><div class="col" style="--fw:590"><div class="panel panel--tex" style="--fw:590;--ar:590/238;--AR:358/104"><div class="trama t-gruesos fade" style="--o:0.9;--g0:6.303%;--g1:119.748%;--G0:7.5%;--G1:142.5%" aria-hidden="true"></div><p class="fo rotulo" style="--t:14px;--l:14px;--T:12px;--L:12px">Shipped.</p><p class="fo cartela" style="--t:10px;--mb:14px;--l:14px;--w:95.254%;--T:10px;--MB:12px;--L:12px;--W:93.296%">Both, in the same release.</p></div><a class="btn btn--tinta" href="work/prescription/#top">Read chapter 1</a></div></div>
+<div class="folio" aria-hidden="true"><span>1</span></div>
 </div>
 </section>
-
-<!-- PHILOSOPHY -->
-<div class="philo-marquee" aria-label="Design principles">
-<div class="philo-track">
-<div class="philo-item"><span class="philo-n">01</span><span class="philo-t">Clarity over cleverness</span></div>
-<div class="philo-item"><span class="philo-n">02</span><span class="philo-t">Systems over screens</span></div>
-<div class="philo-item"><span class="philo-n">03</span><span class="philo-t">Constraints are a gift</span></div>
-<div class="philo-item"><span class="philo-n">04</span><span class="philo-t">Details reveal character</span></div>
-<div class="philo-item"><span class="philo-n">05</span><span class="philo-t">Constraints clarify</span></div>
-<div class="philo-item" aria-hidden="true"><span class="philo-n">01</span><span class="philo-t">Clarity over cleverness</span></div>
-<div class="philo-item" aria-hidden="true"><span class="philo-n">02</span><span class="philo-t">Systems over screens</span></div>
-<div class="philo-item" aria-hidden="true"><span class="philo-n">03</span><span class="philo-t">Constraints are a gift</span></div>
-<div class="philo-item" aria-hidden="true"><span class="philo-n">04</span><span class="philo-t">Details reveal character</span></div>
-<div class="philo-item" aria-hidden="true"><span class="philo-n">05</span><span class="philo-t">Constraints clarify</span></div>
-</div>
-</div>
-
-<!-- CONTACT -->
-<section class="section-contact" id="contact" aria-labelledby="contact-heading">
-<p class="eyebrow eyebrow--plain reveal">002 / Info</p>
-<h2 class="contact-display reveal reveal-d1" id="contact-heading">Let&rsquo;s build<br>something <span class="accent">together.</span></h2>
-<div class="contact-actions reveal reveal-d2">
-<a href="mailto:jordimoca@gmail.com" class="contact-btn contact-btn--primary" data-magnetic>jordimoca@gmail.com</a>
-<a href="https://www.linkedin.com/in/jordimoca/" target="_blank" rel="noopener noreferrer" class="contact-btn contact-btn--ghost" aria-label="LinkedIn (opens in new tab)">LinkedIn &#8599;</a>
+<section class="author" aria-labelledby="about-me">
+<div class="wrap stack">
+<h2 class="h2" id="about-me">About me</h2>
+<div class="cenefa cenefa--doble" aria-hidden="true"></div>
+<div class="row"><div class="panel panel--tex" style="--fw:387;--ar:387/329;--AR:358/177"><div class="trama t-finos fade" style="--o:0.7" aria-hidden="true"></div><span class="fo etiqueta" style="--t:14px;--l:14px;--T:12px;--L:12px">2022–present</span><p class="fo cartela" style="--t:10px;--mb:14px;--l:14px;--w:92.765%;--T:10px;--MB:10px;--L:12px;--W:93.296%">Senior Product Designer at <b style="--fs:18px;--lh:22.5px;--FS:18px;--LH:22.5px">Cegedim</b>. Reference designer for a medical prescription product used by doctors. I build its design system and co-build Cegedim's.</p></div><div class="panel panel--tex" style="--fw:387;--ar:387/329;--AR:358/156"><div class="trama t-rayado fade" style="--o:0.35" aria-hidden="true"></div><span class="fo etiqueta" style="--t:14px;--l:14px;--T:12px;--L:12px">2018–2022</span><p class="fo cartela" style="--t:10px;--mb:14px;--l:14px;--w:92.765%;--T:auto;--MB:9px;--L:12px;--W:93.296%"><b style="--fs:18px;--lh:22.5px;--FS:18px;--LH:22.5px">Grupo Godó</b>. I designed and built the user account areas of La Vanguardia and Mundo Deportivo, still in use today.</p></div><div class="panel" style="--fw:386;--ar:386/329;--AR:358/315"><div class="ph" style="--cl:37.306%;--ct:0.122%;--cw:62.694%;--ch:99.878%;--il:0%;--it:-0.076%;--iw:145.868%;--ih:161.138%;--CL:36.592%;--CW:63.408%;--IL:-0.073%;--IT:-7.81%;--IW:160.059%;--IH:173.016%"><img src="assets/img/drawing-07.webp" alt="Jordi walking" width="950" height="1425" decoding="async" loading="lazy"></div><span class="ov etiqueta" style="--l:14px;--t:14px;--L:12px;--T:12px">Origin · 2007–2018</span><p class="ov cartela" style="--l:14px;--t:13.982%;--w:75.389%;--L:12px;--T:13.968%;--W:60.056%">Civil engineering at UPC, multimedia at UOC, then digital banking at <b style="--fs:15px;--lh:19.5px;--FS:18px;--LH:22.5px">Innofis</b>.</p><a class="ov enlace" href="about/#origin" style="--l:14px;--b:14px;--L:12px;--B:12px">Read the whole story...</a></div></div>
+<div class="folio" aria-hidden="true"><span>2</span></div>
 </div>
 </section>
-
 </main>
-
-<footer class="site-footer" role="contentinfo">
-<div class="footer-inner">
-<p class="footer-copy">&copy; 2026 Jordi Moca &mdash; Senior Product Designer &middot; Barcelona, CAT</p>
-<nav class="footer-links" aria-label="Footer navigation">
-<a href="index.html">Home</a>
-<a href="work/index.html">Work</a>
-<a href="about-me.html">About Me</a>
-<a href="https://www.linkedin.com/in/jordimoca/" target="_blank" rel="noopener noreferrer">LinkedIn &#8599;</a>
-</nav>
+<footer class="final" id="contact">
+<div class="trama t-blancos fade" style="--o:0.55;--f0:rgba(20,16,24,0.75);--f1:rgba(20,16,24,0)" aria-hidden="true"></div>
+<div class="wrap">
+<div class="final-text">
+<p class="tbc">To be continued…</p>
+<h2 class="final-h">Get in touch</h2>
+<a class="btn btn--papel" href="mailto:jordimoca@gmail.com">jordimoca@gmail.com</a>
+<p class="final-links"><a href="https://www.linkedin.com/in/jordimoca/" rel="me">LinkedIn</a><a href="assets/cv/Jordi-Moca-Senior-Product-Designer-CV.pdf" target="_blank" rel="noopener">Download CV (PDF)<span class="sr-only"> (PDF, opens in a new tab)</span></a></p>
+</div>
+<div class="final-panel"><div class="ph" style="--cl:3.043%;--ct:4.667%;--cw:93.913%;--ch:90.667%;--il:0%;--it:-26.103%;--iw:100%;--ih:238.235%;--CL:3.911%;--CT:5.385%;--CW:92.179%;--CH:89.231%;--IL:0%;--IT:-18.103%;--IW:100%;--IH:213.362%"><img src="assets/img/drawing-01.webp" alt="Jordi in sunglasses, waving" width="870" height="1305" decoding="async" loading="lazy"></div></div>
+<p class="copy">© 2026 Jordi Moca</p>
 </div>
 </footer>
-
-<script src="js/script.js"></script>
 </body>
 </html>

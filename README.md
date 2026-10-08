@@ -1,6 +1,6 @@
-# Jordi Moca — Product Designer Portfolio
+# Jordi Moca — Senior Product Designer Portfolio
 
-Personal portfolio website of **Jordi Moca**, a product designer focused on complex interfaces, design systems, and scalable digital products.
+Personal portfolio website of **Jordi Moca**, a Senior Product Designer focused on complex interfaces, design systems, and scalable digital products.
 
 **Live site:** https://www.jordimoca.com
 
@@ -47,15 +47,13 @@ Good design must work for everyone, including assistive technologies.
 
 ## Structured case studies
 
-Each project is presented as a complete design narrative including:
+Each case study is told twice: as a comic chapter (panels, captions and speech balloons) and as a plain-text version with the same story:
 
-* Context
-* Problem definition
-* Research insights
-* Design process
-* Key decisions
+* Context and role
+* The brief
+* Key decisions and how they were argued
 * Final solution
-* Product impact
+* Outcome and lessons
 
 This structure highlights both **design outcomes and design reasoning**.
 
@@ -81,9 +79,11 @@ Key SEO features include:
 The portfolio is intentionally built with a lightweight stack:
 
 * **HTML5** for semantic page structure
-* **CSS3** for layout, typography and theming
-* **Vanilla JavaScript** for minimal interactivity
+* **CSS3** for layout, typography and theming (one stylesheet, no framework)
+* **Google Fonts**: Dela Gothic One, Montserrat and Shantell Sans
 * **GitHub Pages** for deployment
+
+The only JavaScript is the redirect map in `404.html`.
 
 No frameworks or build tools are required.
 
@@ -92,32 +92,26 @@ No frameworks or build tools are required.
 # Project Structure
 
 ```
-portfolio/
+index.html                      Home: cover, chapter 1 preview, about the author
+work/index.html                 Case studies
+work/prescription/index.html    Chapter 1 as a comic
+work/prescription/text/index.html  Chapter 1 as text
+about/index.html                About
+404.html                        Not found page; redirects old URLs
+about.html, about-me.html       Redirects to /about/
 
-index.html
-about.html
+assets/css/site.css             All styles (desktop from 1024px, mobile below)
+assets/img/                     Drawings and sketches (WebP) and og-image.jpg
+assets/cv/                      CV in PDF
 
-css/
-  styles.css
-
-js/
-  main.js
-
-images/
-  README.md
-
-work/
-  index.html
-
-insights/
-  index.html
-  designing-healthcare-interfaces.html
-
+favicon.svg
+CNAME
 robots.txt
 sitemap.xml
-.nojekyll
-favicon.svg
+_redirects                      Netlify-style redirects (ignored by GitHub Pages)
 ```
+
+The layout follows the Figma file «Web completa» at its two frame widths, 1440 and 390 px; in between, the layout scales fluidly.
 
 ---
 
@@ -158,11 +152,11 @@ The project does not require a build step.
 To run the site locally:
 
 ```
-git clone https://github.com/yourusername/portfolio.git
-cd portfolio
+git clone https://github.com/jordimoca/jordimoca.git
+cd jordimoca
 ```
 
-Open `index.html` directly in a browser or run a simple local server.
+Run a simple local server (links point to folders, so opening `index.html` from disk won't follow them).
 
 Example using Python:
 
@@ -184,38 +178,22 @@ The site is deployed using **GitHub Pages**.
 
 Workflow:
 
-1. Push changes to the `main` branch
+1. Push changes to the `master` branch
 2. GitHub Pages automatically builds and deploys the site
 3. The updated site becomes available at
 
 https://www.jordimoca.com
 
-The `.nojekyll` file ensures the repository is served as a pure static site.
 
 ---
 
 # Adding New Case Studies
 
-New projects can be added inside the `work/` directory.
-
-Example:
+New chapters go inside the `work/` directory, each in its own folder with a comic and a text version:
 
 ```
-work/healthcare-dashboard-design.html
-```
-
-Recommended structure:
-
-```
-H1 Project Title
-
-H2 Context
-H2 Problem
-H2 Research
-H2 Design Process
-H2 Key Decisions
-H2 Final Solution
-H2 Impact
+work/<chapter>/index.html
+work/<chapter>/text/index.html
 ```
 
 After creating a new case study:
@@ -228,27 +206,14 @@ After creating a new case study:
 
 # Image Guidelines
 
-All project images should be stored in the `images/` directory.
+All images live in `assets/img/` as WebP, sized for 2x screens.
 
-Recommended naming format:
+Naming format:
 
 ```
-project-name-cover.png
-project-name-wireframes.png
-project-name-ui.png
+drawing-02-1.webp
+sketch-08-modular-screen.webp
 ```
-
-Images should be optimised for the web to maintain performance.
-
----
-
-# Inspiration
-
-The portfolio design approach is inspired by modern product design teams and companies known for strong design culture, including:
-
-* Vercel
-* Linear
-* Stripe
 
 ---
 
@@ -260,7 +225,7 @@ If you would like to collaborate or discuss product design work:
 https://www.jordimoca.com
 
 **LinkedIn**
-(Add your LinkedIn profile)
+https://www.linkedin.com/in/jordimoca/
 
 ---
 
